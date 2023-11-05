@@ -87,6 +87,7 @@ SOFTWARE.
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+    <maven.version>3.9.0</maven.version>
     <skipITs/>
   </properties>
   <dependencies>
@@ -192,11 +193,6 @@ SOFTWARE.
       <testResource>
         <directory>src/test/resources</directory>
         <filtering>false</filtering>
-        <includes>
-          <include>**/*.class</include>
-          <include>**/*.java</include>
-          <include>**/*.eo</include>
-        </includes>
       </testResource>
     </testResources>
   </build>
