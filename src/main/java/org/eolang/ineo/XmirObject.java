@@ -27,10 +27,10 @@ import com.jcabi.xml.XML;
 import java.util.List;
 
 /**
- * EO object in XMIR with access to attributes and methods.
+ * XMIR representation of EO object with access to attributes and methods.
  * @since 0.0.1
  */
-public final class EoObject {
+public final class XmirObject {
     /**
      * Xpath for attributes.
      */
@@ -56,7 +56,7 @@ public final class EoObject {
      * Ctor.
      * @param doc XML document.
      */
-    public EoObject(final XML doc) {
+    public XmirObject(final XML doc) {
         this.document = doc;
     }
 
@@ -65,7 +65,7 @@ public final class EoObject {
      * @return XML nodes with attributes
      */
     public List<XML> attributes() {
-        return this.document.nodes(EoObject.ATTRS);
+        return this.document.nodes(XmirObject.ATTRS);
     }
 
     /**
@@ -73,7 +73,7 @@ public final class EoObject {
      * @return XML nodes with methods
      */
     public List<XML> methods() {
-        return this.document.nodes(EoObject.MTDS);
+        return this.document.nodes(XmirObject.MTDS);
     }
 
     /**
@@ -81,6 +81,6 @@ public final class EoObject {
      * @return XML node with constructor
      */
     public XML constructor() {
-        return this.document.nodes(EoObject.CTOR).get(0);
+        return this.document.nodes(XmirObject.CTOR).get(0);
     }
 }

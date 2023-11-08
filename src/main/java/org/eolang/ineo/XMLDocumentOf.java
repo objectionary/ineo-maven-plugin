@@ -96,4 +96,14 @@ public final class XMLDocumentOf implements XML {
     public Node node() {
         return this.document.value().node();
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+        return this.document.value().equals(obj);
+    }
+
+    @Override
+    public int hashCode() {
+        return this.document.value().hashCode();
+    }
 }

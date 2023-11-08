@@ -69,4 +69,14 @@ public final class XSLDocumentOf implements XSL {
     public XSL with(final String str, final Object obj) {
         return this.document.value().with(str, obj);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+        return this.document.value().equals(obj);
+    }
+
+    @Override
+    public int hashCode() {
+        return this.document.value().hashCode();
+    }
 }

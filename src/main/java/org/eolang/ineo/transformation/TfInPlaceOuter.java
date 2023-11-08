@@ -39,7 +39,7 @@ public class TfInPlaceOuter extends TfWrap {
      */
     private static final String TEMPLATE = String.join(
         "\n",
-        "  <xsl:template match=\"//o[@base='.new']/o[@base='%s' and o[@base='.new']]\">",
+        "  <xsl:template match=\"//o[@base='.new']/o[@base='%s' and o[@base='.new']][1]\">",
         "    <o base=\"%s\">",
         "      %s",
         "    </o>",

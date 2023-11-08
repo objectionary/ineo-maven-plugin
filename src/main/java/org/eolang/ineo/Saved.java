@@ -26,6 +26,7 @@ package org.eolang.ineo;
 import com.jcabi.xml.XML;
 import java.io.IOException;
 import java.nio.file.Path;
+import org.cactoos.Func;
 import org.cactoos.Input;
 import org.cactoos.Scalar;
 import org.cactoos.Text;
@@ -34,14 +35,24 @@ import org.cactoos.io.OutputTo;
 import org.cactoos.io.TeeInput;
 import org.cactoos.scalar.IoChecked;
 import org.cactoos.scalar.LengthOf;
-import org.cactoos.scalar.ScalarEnvelope;
+import org.cactoos.scalar.Unchecked;
 import org.cactoos.text.TextOfScalar;
 
 /**
  * Saved.
  * @since 0.0.1
  */
-public final class Saved extends ScalarEnvelope<Boolean> {
+public final class Saved {
+    /**
+     * Scalar.
+     */
+    private final Func<Path, Long> origin;
+
+    /**
+     * Path to save to.
+     */
+    private final Unchecked<Path> path;
+
     /**
      * Ctor.
      * @param xml XML to save
@@ -85,34 +96,45 @@ public final class Saved extends ScalarEnvelope<Boolean> {
      */
     public Saved(final Input input, final Scalar<Path> target) {
         this(
-            () -> {
-                try {
-                    new IoChecked<>(
-                        new LengthOf(
-                            new TeeInput(
-                                input,
-                                new OutputTo(target.value())
-                            )
-                        )
-                    ).value();
-                    return true;
-                } catch (final IOException ex) {
-                    throw new IOException(
-                        String.format(
-                            "Failed while trying to save to %s",
-                            target
-                        ), ex
-                    );
-                }
-            }
+            pth -> new LengthOf(
+                new TeeInput(
+                    input,
+                    new OutputTo(pth)
+                )
+            ).value(),
+            target
         );
     }
 
     /**
      * Ctor.
-     * @param origin Function for saving
+     * @param func Saving function
+     * @param pth Path to save to
      */
-    private Saved(final Scalar<Boolean> origin) {
-        super(origin);
+    private Saved(final Func<Path, Long> func, final Scalar<Path> pth) {
+        this.origin = func;
+        this.path = new Unchecked<>(pth);
+    }
+
+    /**
+     * Save.
+     * @return Amount of saved bytes
+     * @throws IOException If fails to save
+     */
+    public Long value() throws IOException {
+        try {
+            return new IoChecked<>(
+                () -> this.origin.apply(
+                    this.path.value()
+                )
+            ).value();
+        } catch (final IOException ex) {
+            throw new IOException(
+                String.format(
+                    "Failed while trying to save to %s",
+                    this.path.value()
+                ), ex
+            );
+        }
     }
 }

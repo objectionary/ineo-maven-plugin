@@ -31,12 +31,12 @@ import java.util.List;
 import org.cactoos.Text;
 import org.cactoos.list.ListOf;
 import org.cactoos.text.Sticky;
-import org.eolang.ineo.EoObject;
 import org.eolang.ineo.InlinedInPlace;
 import org.eolang.ineo.Saved;
 import org.eolang.ineo.TextOfXmir;
 import org.eolang.ineo.XMLDocumentOf;
 import org.eolang.ineo.XSLDocumentOf;
+import org.eolang.ineo.XmirObject;
 import org.eolang.ineo.XmirPath;
 import org.eolang.ineo.inside.InsAttribute;
 import org.eolang.ineo.inside.InsMethod;
@@ -85,7 +85,7 @@ public final class OpInPlace implements Optimization {
     public Transformation apply(final XML node) throws Exception {
         final String base = node.xpath("@base").get(0);
         final Text inlined = new Sticky(new InlinedInPlace(base));
-        final EoObject outer = new EoObject(
+        final XmirObject outer = new XmirObject(
             new XMLDocumentOf(
                 new TextOfXmir(this.sources, base)
             )
@@ -102,7 +102,7 @@ public final class OpInPlace implements Optimization {
                 final XML arg = argument.nodes("o").get(0);
                 final String inlinee = arg.xpath("@base").get(0);
                 args.addAll(arg.nodes("o"));
-                final EoObject inner = new EoObject(
+                final XmirObject inner = new XmirObject(
                     new XMLDocumentOf(
                         new TextOfXmir(this.sources, inlinee)
                     )

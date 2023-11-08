@@ -33,6 +33,7 @@ import org.xembly.Xembler;
  * @param <T> Type of instructions
  * @since 0.0.1
  */
+@SuppressWarnings({"JTCOP.RuleAllTestsHaveProductionClass", "JTCOP.RuleCorrectTestName"})
 final class NodesOfInstructions<T> extends ListEnvelope<XML> {
     /**
      * Ctor.

@@ -41,7 +41,7 @@ public final class TfTemplate implements Transformation {
     private static final Matcher TEMPLATE = Pattern.compile("\\{\\{ template }}").matcher(
         new UncheckedText(
             new TextOf(
-                new ResourceOf("org/eolang/ineo/transformation.xsl")
+                new ResourceOf("org/eolang/ineo/transformation.txt")
             )
         ).asString()
     );
@@ -61,6 +61,6 @@ public final class TfTemplate implements Transformation {
 
     @Override
     public String asString() {
-        return TfTemplate.TEMPLATE.replaceAll(this.template.asString());
+        return TfTemplate.TEMPLATE.replaceFirst(this.template.asString());
     }
 }
