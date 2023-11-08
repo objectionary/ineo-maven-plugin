@@ -21,21 +21,17 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.eolang.ineo;
+package org.eolang.ineo.scenario;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import com.jcabi.xml.XML;
+import java.util.List;
+import org.cactoos.Func;
 
 /**
- * Test cases for {@link InlineMojo}.
+ * Scenario for optimization.
  * @since 0.0.1
  */
-final class InlineMojoTest {
-    @Test
-    void executes() {
-        Assertions.assertDoesNotThrow(
-            new InlineMojo()::execute,
-            "InlineMojo threw an exception, but it shouldn't"
-        );
-    }
+public interface Scenario extends Func<XML, List<XML>> {
+    @Override
+    List<XML> apply(XML xml);
 }
