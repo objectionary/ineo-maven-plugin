@@ -34,6 +34,7 @@ import org.eolang.ineo.InlinedInPlace;
 import org.eolang.ineo.Saved;
 import org.eolang.ineo.TextOfXmir;
 import org.eolang.ineo.XMLDocumentOf;
+import org.eolang.ineo.XSLDocumentOf;
 import org.eolang.ineo.XmirPath;
 import org.eolang.ineo.scenario.ScInPlace;
 import org.eolang.ineo.transformation.Transformation;
@@ -150,6 +151,24 @@ final class OpInPlaceTest {
             new XMLDocumentOf(
                 new XmirPath(temp, new InlinedInPlace("b"))
             ).nodes("//o[@abstract and @name='bar']/o/o[@base='this-a-foo']"),
+            Matchers.hasSize(1)
+        );
+    }
+
+    @Test
+    void replacesInMainXmir(@TempDir final Path temp) throws Exception {
+        OpInPlaceTest.copySources(temp);
+        MatcherAssert.assertThat(
+            "Creation of object \"b\" in main.xmir should be replaced with \"inlined-b\", but it wasn't",
+            new XSLDocumentOf(OpInPlaceTest.optimize(temp)).transform(
+                new XMLDocumentOf(
+                    new TextOf(
+                        new XmirPath(temp, "main").value()
+                    )
+                )
+            ).nodes(
+                "//o[@base='.bar']/o[@base='.new']/o[@base='inlined-b' and count(o[@base='int'])=2]"
+            ),
             Matchers.hasSize(1)
         );
     }

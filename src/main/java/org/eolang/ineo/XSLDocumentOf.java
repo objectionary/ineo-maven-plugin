@@ -79,4 +79,9 @@ public final class XSLDocumentOf implements XSL {
     public int hashCode() {
         return this.document.value().hashCode();
     }
+
+    @Override
+    public String toString() {
+        return this.document.value().toString();
+    }
 }

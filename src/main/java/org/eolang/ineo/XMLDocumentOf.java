@@ -106,4 +106,9 @@ public final class XMLDocumentOf implements XML {
     public int hashCode() {
         return this.document.value().hashCode();
     }
+
+    @Override
+    public String toString() {
+        return this.document.value().toString();
+    }
 }

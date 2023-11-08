@@ -38,6 +38,7 @@ import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
+import org.cactoos.Func;
 import org.cactoos.iterable.Mapped;
 import org.cactoos.map.MapEntry;
 import org.cactoos.map.MapOf;
@@ -63,7 +64,7 @@ public final class InlineMojo extends AbstractMojo {
     @Parameter(
         property = "sources",
         required = true,
-        defaultValue = "{project.build.outputDirectory}/transpiled-sources"
+        defaultValue = "target/transpiled-sources"
     )
     private File sources;
 
@@ -71,8 +72,8 @@ public final class InlineMojo extends AbstractMojo {
      * Optimizations.
      * @checkstyle MemberNameCheck (5 lines)
      */
-    private final Map<Scenario, Optimization> optimizations = new MapOf<>(
-        new MapEntry<>(new ScInPlace(), new OpInPlace(this.sources))
+    private final Map<Scenario, Func<File, Optimization>> optimizations = new MapOf<>(
+        new MapEntry<>(new ScInPlace(), OpInPlace::new)
     );
 
     @Override
@@ -80,11 +81,12 @@ public final class InlineMojo extends AbstractMojo {
         for (final Path path : new FilesOf(this.sources)) {
             Logger.info(this, "Scanning %s", path);
             XML before = new XMLDocumentOf(new TextOf(path));
-            boolean more;
             XML after;
+            boolean more;
+            boolean save = false;
             do {
                 after = before;
-                for (final Map.Entry<Scenario, Optimization> optimization
+                for (final Map.Entry<Scenario, Func<File, Optimization>> optimization
                     : this.optimizations.entrySet()) {
                     final Scenario scenario = optimization.getKey();
                     final List<XML> nodes = scenario.apply(before);
@@ -95,7 +97,7 @@ public final class InlineMojo extends AbstractMojo {
                                 new Mapped<>(
                                     node -> new StXSL(
                                         new XSLDocumentOf(
-                                            optimization.getValue().apply(node)
+                                            optimization.getValue().apply(this.sources).apply(node)
                                         )
                                     ),
                                     nodes
@@ -106,16 +108,16 @@ public final class InlineMojo extends AbstractMojo {
                 }
                 more = !after.equals(before);
                 if (more) {
+                    save = true;
                     before = after;
                 }
             } while (more);
-            try {
-                new Saved(
-                    after,
-                    new XmirPath(this.sources, path.getFileName().toString())
-                ).value();
-            } catch (final IOException ex) {
-                throw new MojoExecutionException(ex);
+            if (save) {
+                try {
+                    new Saved(after, path).value();
+                } catch (final IOException ex) {
+                    throw new MojoExecutionException(ex);
+                }
             }
         }
     }

@@ -54,6 +54,15 @@ public class XmirPath extends ScalarEnvelope<Path> {
     /**
      * Ctor.
      * @param home Home directory
+     * @param name File name without extension
+     */
+    public XmirPath(final File home, final Text name) {
+        this(home.toPath(), name);
+    }
+
+    /**
+     * Ctor.
+     * @param home Home directory
      * @param name Fire name without extension
      */
     public XmirPath(final Path home, final Text name) {

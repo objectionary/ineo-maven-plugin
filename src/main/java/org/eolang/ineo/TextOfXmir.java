@@ -23,6 +23,7 @@
  */
 package org.eolang.ineo;
 
+import java.io.File;
 import java.nio.file.Path;
 import org.cactoos.Scalar;
 import org.cactoos.Text;
@@ -39,6 +40,15 @@ public final class TextOfXmir implements Text {
      * Text.
      */
     private final Unchecked<UncheckedText> text;
+
+    /**
+     * Ctor.
+     * @param sources Sources directory
+     * @param name File name without extension
+     */
+    public TextOfXmir(final File sources, final String name) {
+        this(sources.toPath(), name);
+    }
 
     /**
      * Ctor.

@@ -58,6 +58,15 @@ public final class Saved {
      * @param xml XML to save
      * @param target Path to save to
      */
+    public Saved(final XML xml, final Path target) {
+        this(xml, () -> target);
+    }
+
+    /**
+     * Ctor.
+     * @param xml XML to save
+     * @param target Path to save to
+     */
     public Saved(final XML xml, final Scalar<Path> target) {
         this(new InputOf(xml::toString), target);
     }

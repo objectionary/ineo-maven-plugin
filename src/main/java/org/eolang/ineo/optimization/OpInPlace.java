@@ -63,21 +63,21 @@ public final class OpInPlace implements Optimization {
     /**
      * Sources directory.
      */
-    private final Path sources;
-
-    /**
-     * Ctor.
-     * @param src Sources directory
-     */
-    public OpInPlace(final File src) {
-        this(src.toPath());
-    }
+    private final File sources;
 
     /**
      * Ctor.
      * @param src Sources directory
      */
     public OpInPlace(final Path src) {
+        this(src.toFile());
+    }
+
+    /**
+     * Ctor.
+     * @param src Sources directory
+     */
+    public OpInPlace(final File src) {
         this.sources = src;
     }
 
