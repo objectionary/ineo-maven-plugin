@@ -1,0 +1,8 @@
++package org.ineo
+
+[d] > a
+  cage d > this-d
+  [] > new
+    ^ > @
+  [] > foo
+    this-d.plus 1 > @

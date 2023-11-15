@@ -1,0 +1,13 @@
++package org.ineo
++alias org.ineo.a
++alias org.ineo.b
+
+[] > main
+  [args] > main
+    bar. > @
+      new.
+        b
+          new.
+            a
+            42
+  main > @

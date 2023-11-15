@@ -64,7 +64,7 @@ public final class InlineMojo extends AbstractMojo {
     @Parameter(
         property = "sources",
         required = true,
-        defaultValue = "target/transpiled-sources"
+        defaultValue = "${project.basedir}/target/transpiled-sources"
     )
     private File sources;
 
@@ -72,7 +72,7 @@ public final class InlineMojo extends AbstractMojo {
      * Optimizations.
      * @checkstyle MemberNameCheck (5 lines)
      */
-    private final Map<Scenario, Func<File, Optimization>> optimizations = new MapOf<>(
+    private static final Map<Scenario, Func<File, Optimization>> OPTIMIZATIONS = new MapOf<>(
         new MapEntry<>(new ScInPlace(), OpInPlace::new)
     );
 
@@ -87,7 +87,7 @@ public final class InlineMojo extends AbstractMojo {
             do {
                 after = before;
                 for (final Map.Entry<Scenario, Func<File, Optimization>> optimization
-                    : this.optimizations.entrySet()) {
+                    : InlineMojo.OPTIMIZATIONS.entrySet()) {
                     final Scenario scenario = optimization.getKey();
                     final List<XML> nodes = scenario.apply(before);
                     if (!nodes.isEmpty()) {
