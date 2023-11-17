@@ -27,7 +27,7 @@ import groovy.xml.XmlParser
 [
   "target/transpiled-sources/a.xmir",
   "target/transpiled-sources/b.xmir",
-  "target/transpiled-sources/inlined-b.xmir",
+  "target/transpiled-sources/b-inlined.xmir",
   "target/transpiled-sources/main.xmir",
 ].each { assert new File(basedir, it).exists() }
 
@@ -43,18 +43,18 @@ def program = new XmlParser().parseText(
   program.objects.o[0].o[0].o[1].'@name' == '@',
   program.objects.o[0].o[0].o[1].'@base' == '.bar',
   program.objects.o[0].o[0].o[1].o[0].'@base' == '.new',
-  program.objects.o[0].o[0].o[1].o[0].o[0].'@base' == 'inlined-b',
+  program.objects.o[0].o[0].o[1].o[0].o[0].'@base' == 'b-inlined',
   program.objects.o[0].o[0].o[1].o[0].o[0].o.size() == 2,
   program.objects.o[0].o[0].o[1].o[0].o[0].o[0].'@base' == 'int',
   program.objects.o[0].o[0].o[1].o[0].o[0].o[1].'@base' == 'int',
 ].each { it -> assert it }
 
 program = new XmlParser().parseText(
-  new File(basedir, "target/transpiled-sources/inlined-b.xmir").text
+  new File(basedir, "target/transpiled-sources/b-inlined.xmir").text
 )
 
 [
-  program.objects.o[0].'@name' == 'inlined-b',
+  program.objects.o[0].'@name' == 'b-inlined',
   program.objects.o[0].o[0].'@name' == 'a-d',
   program.objects.o[0].o[1].'@name' == 'z',
   program.objects.o[0].o[2].'@name' == 'this-a-d',

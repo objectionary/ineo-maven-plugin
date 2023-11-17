@@ -32,15 +32,16 @@ import org.junit.jupiter.api.io.TempDir;
 
 /**
  * Test cases for {@link XmirPath}.
+ * @since 0.0.2
  */
-public class XmirPathTest {
+final class XmirPathTest {
     @Test
     void buildsValidPath(@TempDir final Path temp) throws Exception {
         MatcherAssert.assertThat(
             "XmirPath should have built valid path, but it didn't",
             new XmirPath(temp, "main").value(),
-            Matchers.equalTo(
-                temp.resolve("main.xmir").toString()
+            Matchers.is(
+                temp.resolve("main.xmir")
             )
         );
     }

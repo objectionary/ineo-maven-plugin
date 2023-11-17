@@ -40,6 +40,7 @@ import org.eolang.ineo.scenario.ScInPlace;
 import org.eolang.ineo.transformation.Transformation;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
@@ -52,6 +53,7 @@ import org.junit.jupiter.api.io.TempDir;
  *  name that contains dots like "org.eolang.main". Need teach XmirPath to do it and enable the
  *  test. Don't forget to remove the puzzle.
  */
+@SuppressWarnings("PMD.TooManyMethods")
 final class OpInPlaceTest {
     @Test
     void returnsTransformation(@TempDir final Path temp) throws Exception {
@@ -164,7 +166,7 @@ final class OpInPlaceTest {
     void replacesInMainXmir(@TempDir final Path temp) throws Exception {
         OpInPlaceTest.copySources(temp);
         MatcherAssert.assertThat(
-            "Creation of object \"b\" in main.xmir should be replaced with \"inlined-b\", but it wasn't",
+            "Creation of object \"b\" in main.xmir should be replaced with \"b-inlined\", but it wasn't",
             new XSLDocumentOf(OpInPlaceTest.optimize(temp)).transform(
                 new XMLDocumentOf(
                     new TextOf(
@@ -172,7 +174,7 @@ final class OpInPlaceTest {
                     )
                 )
             ).nodes(
-                "//o[@base='.bar']/o[@base='.new']/o[@base='inlined-b' and count(o[@base='int'])=2]"
+                "//o[@base='.bar']/o[@base='.new']/o[@base='b-inlined' and count(o[@base='int'])=2]"
             ),
             Matchers.hasSize(1)
         );
@@ -182,7 +184,10 @@ final class OpInPlaceTest {
     @Disabled
     void replacesWithComplexNames(@TempDir final Path temp) throws Exception {
         OpInPlaceTest.copySources(temp);
-        OpInPlaceTest.optimize(temp, "complex");
+        Assertions.assertDoesNotThrow(
+            () -> OpInPlaceTest.optimize(temp, "complex"),
+            "Optimization of complex example should not throw an exception"
+        );
     }
 
     /**
@@ -225,6 +230,7 @@ final class OpInPlaceTest {
     /**
      * Apply "in-place" optimization.
      * @param dir Directory to get sources from
+     * @param name Name of XMIR object
      * @return Result of optimization
      * @throws Exception If fails to optimize
      */

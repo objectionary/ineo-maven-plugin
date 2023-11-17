@@ -59,6 +59,14 @@ import org.eolang.ineo.scenario.Scenario;
 )
 public final class InlineMojo extends AbstractMojo {
     /**
+     * Optimizations.
+     * @checkstyle MemberNameCheck (5 lines)
+     */
+    private static final Map<Scenario, Func<File, Optimization>> OPTIMIZATIONS = new MapOf<>(
+        new MapEntry<>(new ScInPlace(), OpInPlace::new)
+    );
+
+    /**
      * Directory with .xmir sources to optimize.
      */
     @Parameter(
@@ -67,14 +75,6 @@ public final class InlineMojo extends AbstractMojo {
         defaultValue = "${project.basedir}/target/transpiled-sources"
     )
     private File sources;
-
-    /**
-     * Optimizations.
-     * @checkstyle MemberNameCheck (5 lines)
-     */
-    private static final Map<Scenario, Func<File, Optimization>> OPTIMIZATIONS = new MapOf<>(
-        new MapEntry<>(new ScInPlace(), OpInPlace::new)
-    );
 
     @Override
     public void execute() throws MojoExecutionException {

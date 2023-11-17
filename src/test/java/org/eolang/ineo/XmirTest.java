@@ -29,6 +29,7 @@ import org.junit.jupiter.api.Test;
 
 /**
  * Test cases for {@link Xmir}.
+ * @since 0.0.2
  */
 final class XmirTest {
     @Test
