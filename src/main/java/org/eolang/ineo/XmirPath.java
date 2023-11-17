@@ -67,7 +67,7 @@ public class XmirPath extends ScalarEnvelope<Path> {
      * @param name Fire name without extension
      */
     public XmirPath(final Path home, final Text name) {
-        this(home, new Xmir(new Replaced(name, "\\.", File.separator)));
+        this(home, new Xmir(new Replaced(name, "\\.", "/")));
     }
 
     /**
