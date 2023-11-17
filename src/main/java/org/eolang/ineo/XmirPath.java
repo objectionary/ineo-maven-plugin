@@ -27,6 +27,7 @@ import java.io.File;
 import java.nio.file.Path;
 import org.cactoos.Text;
 import org.cactoos.scalar.ScalarEnvelope;
+import org.cactoos.text.Replaced;
 
 /**
  * Path to file with .xmir extension.
@@ -66,7 +67,7 @@ public class XmirPath extends ScalarEnvelope<Path> {
      * @param name Fire name without extension
      */
     public XmirPath(final Path home, final Text name) {
-        this(home, new Xmir(name));
+        this(home, new Xmir(new Replaced(name, "\\.", File.separator)));
     }
 
     /**

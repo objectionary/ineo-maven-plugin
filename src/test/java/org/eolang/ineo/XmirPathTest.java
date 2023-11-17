@@ -47,16 +47,14 @@ final class XmirPathTest {
     }
 
     @Test
-    @Disabled
     void replacesDotsInGivenPath(@TempDir final Path temp) throws Exception {
         MatcherAssert.assertThat(
             "XmirPath should have replaced dot's in name with slashes, but it didn't",
             new XmirPath(temp, "org.eolang.main").value(),
-            Matchers.equalTo(
+            Matchers.is(
                 temp.resolve("org")
                     .resolve("eolang")
                     .resolve("main.xmir")
-                    .toString()
             )
         );
     }
