@@ -25,7 +25,7 @@ SOFTWARE.
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.eolang</groupId>
-  <artifactId>inline-in-place</artifactId>
+  <artifactId>eo-xmir-eo</artifactId>
   <version>@project.version@</version>
   <dependencies>
     <dependency>
@@ -36,7 +36,7 @@ SOFTWARE.
     <dependency>
       <groupId>org.eolang</groupId>
       <artifactId>eo-maven-plugin</artifactId>
-      <version>0.32.0</version>
+      <version>0.33.0</version>
     </dependency>
   </dependencies>
   <build>
@@ -44,7 +44,7 @@ SOFTWARE.
       <plugin>
         <groupId>org.eolang</groupId>
         <artifactId>eo-maven-plugin</artifactId>
-        <version>0.32.0</version>
+        <version>0.33.0</version>
         <configuration>
           <foreign>${project.basedir}/target/eo-foreign.json</foreign>
           <foreignFormat>json</foreignFormat>
@@ -55,8 +55,8 @@ SOFTWARE.
             <id>compile</id>
             <goals>
               <goal>register</goal>
-              <goal>assemble</goal>
-              <goal>transpile</goal>
+              <goal>parse</goal>
+              <goal>optimize</goal>
             </goals>
           </execution>
         </executions>

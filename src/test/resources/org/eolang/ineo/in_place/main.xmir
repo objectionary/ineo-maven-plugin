@@ -1,8 +1,4 @@
 <program ms="18" name="main" time="2023-10-19T09:27:28.852003Z">
-  <listing>[] &gt; main
-    [args...] &gt; main
-    b.new (a.new 42) 21
-  </listing>
   <errors/>
   <sheets/>
   <license/>

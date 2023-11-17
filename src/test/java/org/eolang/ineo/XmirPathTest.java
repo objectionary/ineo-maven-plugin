@@ -23,28 +23,39 @@
  */
 package org.eolang.ineo;
 
-import org.cactoos.text.FormattedText;
-import org.cactoos.text.TextEnvelope;
+import java.nio.file.Path;
+import org.hamcrest.MatcherAssert;
+import org.hamcrest.Matchers;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
 
 /**
- * Inlined in place object name.
- * @since 0.0.1
+ * Test cases for {@link XmirPath}.
  */
-public final class InlinedInPlace extends TextEnvelope {
-    /**
-     * Format for name.
-     */
-    private static final String FORMAT = "%s-inlined";
+public class XmirPathTest {
+    @Test
+    void buildsValidPath(@TempDir final Path temp) throws Exception {
+        MatcherAssert.assertThat(
+            "XmirPath should have built valid path, but it didn't",
+            new XmirPath(temp, "main").value(),
+            Matchers.equalTo(
+                temp.resolve("main.xmir").toString()
+            )
+        );
+    }
 
-    /**
-     * Ctor.
-     * @param name Original object name
-     */
-    public InlinedInPlace(final String name) {
-        super(
-            new FormattedText(
-                InlinedInPlace.FORMAT,
-                name
+    @Test
+    @Disabled
+    void replacesDotsInGivenPath(@TempDir final Path temp) throws Exception {
+        MatcherAssert.assertThat(
+            "XmirPath should have replaced dot's in name with slashes, but it didn't",
+            new XmirPath(temp, "org.eolang.main").value(),
+            Matchers.equalTo(
+                temp.resolve("org")
+                    .resolve("eolang")
+                    .resolve("main.xmir")
+                    .toString()
             )
         );
     }

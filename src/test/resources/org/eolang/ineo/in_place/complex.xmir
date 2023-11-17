@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program dob="2023-11-16T21:46:57"
+         ms="246"
+         name="org.ineo.main"
+         revision="00471b9"
+         source="/Users/maxonfjvipon/code/java/ineo/target/it/eo-xmir-eo/src/main/eo/org/ineo/main.eo"
+         time="2023-11-17T14:04:18.463356Z"
+         version="0.33.0">
+  <listing>+package org.ineo
+    +alias org.eolang.ineo.a
+    +alias org.eolang.ineo.b
+
+    [] &gt; main
+    [] &gt; main
+    (b (a "Jeff").new).new.bar &gt; @
+    main &gt; @
+  </listing>
+  <errors>
+    <error check="unsorted-metas"
+           line="2"
+           severity="warning"
+           sheet="unsorted-metas"
+           step="0">Meta is out of order: "alias org.eolang.ineo.a"</error>
+    <error check="unsorted-metas"
+           line="3"
+           severity="warning"
+           sheet="unsorted-metas"
+           step="0">Meta is out of order: "alias org.eolang.ineo.b"</error>
+    <error check="missing-home"
+           line=""
+           severity="warning"
+           sheet="mandatory-home-meta"
+           step="0">Missing home</error>
+    <error check="missing-version-meta"
+           line=""
+           severity="warning"
+           sheet="mandatory-version-meta"
+           step="0">Missing version meta</error>
+  </errors>
+  <sheets>
+    <sheet>not-empty-atoms</sheet>
+    <sheet>duplicate-names</sheet>
+    <sheet>many-free-attributes</sheet>
+    <sheet>broken-aliases</sheet>
+    <sheet>duplicate-aliases</sheet>
+    <sheet>global-nonames</sheet>
+    <sheet>same-line-names</sheet>
+    <sheet>self-naming</sheet>
+    <sheet>cti-adds-errors</sheet>
+    <sheet>add-refs</sheet>
+    <sheet>wrap-method-calls</sheet>
+    <sheet>expand-qqs</sheet>
+    <sheet>add-probes</sheet>
+    <sheet>vars-float-up</sheet>
+    <sheet>add-refs</sheet>
+    <sheet>sparse-decoration</sheet>
+    <sheet>unsorted-metas</sheet>
+    <sheet>incorrect-architect</sheet>
+    <sheet>incorrect-home</sheet>
+    <sheet>incorrect-version</sheet>
+    <sheet>expand-aliases</sheet>
+    <sheet>resolve-aliases</sheet>
+    <sheet>add-refs</sheet>
+    <sheet>add-default-package</sheet>
+    <sheet>broken-refs</sheet>
+    <sheet>unknown-names</sheet>
+    <sheet>noname-attributes</sheet>
+    <sheet>duplicate-names</sheet>
+    <sheet>duplicate-metas</sheet>
+    <sheet>mandatory-package-meta</sheet>
+    <sheet>mandatory-home-meta</sheet>
+    <sheet>mandatory-version-meta</sheet>
+    <sheet>correct-package-meta</sheet>
+    <sheet>prohibited-package</sheet>
+    <sheet>external-weak-typed-atoms</sheet>
+    <sheet>unused-aliases</sheet>
+    <sheet>unit-test-without-phi</sheet>
+    <sheet>explicit-data</sheet>
+    <sheet>set-locators</sheet>
+  </sheets>
+  <license/>
+  <metas>
+    <meta line="1">
+      <head>package</head>
+      <tail>org.ineo</tail>
+      <part>org.ineo</part>
+    </meta>
+    <meta expanded="" line="2">
+      <head>alias</head>
+      <tail>a org.eolang.ineo.a</tail>
+      <part>a</part>
+      <part>org.eolang.ineo.a</part>
+    </meta>
+    <meta expanded="" line="3">
+      <head>alias</head>
+      <tail>b org.eolang.ineo.b</tail>
+      <part>b</part>
+      <part>org.eolang.ineo.b</part>
+    </meta>
+    <meta line="7">
+      <head>probe</head>
+      <tail>b.new.bar</tail>
+      <part>b.new.bar</part>
+    </meta>
+  </metas>
+  <objects>
+    <o abstract=""
+       line="5"
+       loc="Φ.org.ineo.main"
+       name="main"
+       pos="0">
+      <o abstract=""
+         line="6"
+         loc="Φ.org.ineo.main.main"
+         name="main"
+         pos="2">
+        <o base=".bar"
+           line="7"
+           loc="Φ.org.ineo.main.main.φ"
+           name="@"
+           pos="26">
+          <o base=".new" line="7" loc="Φ.org.ineo.main.main.φ.ρ" pos="22">
+            <o base="org.eolang.ineo.b"
+               line="7"
+               loc="Φ.org.ineo.main.main.φ.ρ.ρ"
+               pos="5">
+              <o base=".new"
+                 line="7"
+                 loc="Φ.org.ineo.main.main.φ.ρ.ρ.α0"
+                 pos="17">
+                <o base="org.eolang.ineo.a"
+                   line="7"
+                   loc="Φ.org.ineo.main.main.φ.ρ.ρ.α0.ρ"
+                   pos="8">
+                  <o base="org.eolang.string"
+                     line="7"
+                     loc="Φ.org.ineo.main.main.φ.ρ.ρ.α0.ρ.α0"
+                     pos="10">
+                    <o base="org.eolang.bytes"
+                       data="bytes"
+                       loc="Φ.org.ineo.main.main.φ.ρ.ρ.α0.ρ.α0.α0">4A 65 66 66</o>
+                  </o>
+                </o>
+              </o>
+            </o>
+          </o>
+        </o>
+      </o>
+      <o base="main"
+         line="8"
+         loc="Φ.org.ineo.main.φ"
+         name="@"
+         pos="2"
+         ref="6"/>
+    </o>
+  </objects>
+</program>

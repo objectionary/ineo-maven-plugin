@@ -1,8 +1,0 @@
-+package org.ineo
-
-[a] > b
-  cage a > this-a
-  [] > new
-    ^ > @
-  [] > bar
-    this-a.foo.plus 2 > @

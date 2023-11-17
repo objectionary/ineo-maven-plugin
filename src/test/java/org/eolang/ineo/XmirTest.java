@@ -23,29 +23,20 @@
  */
 package org.eolang.ineo;
 
-import org.cactoos.text.FormattedText;
-import org.cactoos.text.TextEnvelope;
+import org.hamcrest.MatcherAssert;
+import org.hamcrest.Matchers;
+import org.junit.jupiter.api.Test;
 
 /**
- * Inlined in place object name.
- * @since 0.0.1
+ * Test cases for {@link Xmir}.
  */
-public final class InlinedInPlace extends TextEnvelope {
-    /**
-     * Format for name.
-     */
-    private static final String FORMAT = "%s-inlined";
-
-    /**
-     * Ctor.
-     * @param name Original object name
-     */
-    public InlinedInPlace(final String name) {
-        super(
-            new FormattedText(
-                InlinedInPlace.FORMAT,
-                name
-            )
+final class XmirTest {
+    @Test
+    void buildsValidName() {
+        MatcherAssert.assertThat(
+            "Xmir should have built valid name with .xmir extension, but it didn't",
+            new Xmir("main").asString(),
+            Matchers.equalTo("main.xmir")
         );
     }
 }

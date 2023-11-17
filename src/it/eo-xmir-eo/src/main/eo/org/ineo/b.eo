@@ -1,0 +1,11 @@
++package org.ineo
++alias org.eolang.io.stdout
+
+[a] > b
+  cage a > this-a
+  [] > new
+    seq > @
+      ^
+  [] > bar
+    stdout > @
+      this-a.foo

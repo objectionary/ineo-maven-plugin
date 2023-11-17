@@ -40,12 +40,17 @@ import org.eolang.ineo.scenario.ScInPlace;
 import org.eolang.ineo.transformation.Transformation;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
 /**
  * Test cases for {@link OpInPlace}.
  * @since 0.0.1
+ * @todo #12:30min Enable {@link OpInPlaceTest#replacesWithComplexNames(Path)} test. The test fails
+ *  with FileNotFound exception because {@link XmirPath} is not able to build the right path with
+ *  name that contains dots like "org.eolang.main". Need teach XmirPath to do it and enable the
+ *  test. Don't forget to remove the puzzle.
  */
 final class OpInPlaceTest {
     @Test
@@ -173,6 +178,13 @@ final class OpInPlaceTest {
         );
     }
 
+    @Test
+    @Disabled
+    void replacesWithComplexNames(@TempDir final Path temp) throws Exception {
+        OpInPlaceTest.copySources(temp);
+        OpInPlaceTest.optimize(temp, "complex");
+    }
+
     /**
      * Copy sources to the given directory.
      * @param dir Directory to copy to
@@ -192,6 +204,10 @@ final class OpInPlaceTest {
             new Saved(
                 new TextOf(new ResourceOf(String.format(resource, "b"))),
                 new XmirPath(dir, "b")
+            ),
+            new Saved(
+                new TextOf(new ResourceOf(String.format(resource, "complex"))),
+                new XmirPath(dir, "complex")
             )
         ).save();
     }
@@ -203,10 +219,20 @@ final class OpInPlaceTest {
      * @throws Exception If fails to optimize
      */
     private static Transformation optimize(final Path dir) throws Exception {
+        return OpInPlaceTest.optimize(dir, "main");
+    }
+
+    /**
+     * Apply "in-place" optimization.
+     * @param dir Directory to get sources from
+     * @return Result of optimization
+     * @throws Exception If fails to optimize
+     */
+    private static Transformation optimize(final Path dir, final String name) throws Exception {
         return new OpInPlace(dir).apply(
             new ScInPlace().apply(
                 new XMLDocumentOf(
-                    new TextOfXmir(dir, "main")
+                    new TextOfXmir(dir, name)
                 )
             ).get(0)
         );
