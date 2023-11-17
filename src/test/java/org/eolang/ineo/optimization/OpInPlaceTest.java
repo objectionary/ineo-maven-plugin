@@ -49,9 +49,8 @@ import org.junit.jupiter.api.io.TempDir;
  * Test cases for {@link OpInPlace}.
  * @since 0.0.1
  * @todo #12:30min Enable {@link OpInPlaceTest#replacesWithComplexNames(Path)} test. The test fails
- *  with FileNotFound exception because {@link XmirPath} is not able to build the right path with
- *  name that contains dots like "org.eolang.main". Need teach XmirPath to do it and enable the
- *  test. Don't forget to remove the puzzle.
+ *  with FileNotFound exception because {@link XmirPath} was not able to build the right path with
+ *  name that contains dots like "org.eolang.main". Don't forget to remove the puzzle.
  */
 @SuppressWarnings("PMD.TooManyMethods")
 final class OpInPlaceTest {
