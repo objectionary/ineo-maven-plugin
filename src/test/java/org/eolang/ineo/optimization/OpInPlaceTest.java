@@ -27,6 +27,7 @@ package org.eolang.ineo.optimization;
 import com.jcabi.xml.XML;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.List;
 import org.cactoos.io.ResourceOf;
 import org.cactoos.text.TextOf;
 import org.eolang.ineo.Home;
@@ -40,7 +41,6 @@ import org.eolang.ineo.scenario.ScInPlace;
 import org.eolang.ineo.transformation.Transformation;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
@@ -48,9 +48,6 @@ import org.junit.jupiter.api.io.TempDir;
 /**
  * Test cases for {@link OpInPlace}.
  * @since 0.0.1
- * @todo #12:30min Enable {@link OpInPlaceTest#replacesWithComplexNames(Path)} test. The test fails
- *  with FileNotFound exception because {@link XmirPath} was not able to build the right path with
- *  name that contains dots like "org.eolang.main". Don't forget to remove the puzzle.
  */
 @SuppressWarnings("PMD.TooManyMethods")
 final class OpInPlaceTest {
@@ -181,11 +178,27 @@ final class OpInPlaceTest {
 
     @Test
     @Disabled
-    void replacesWithComplexNames(@TempDir final Path temp) throws Exception {
-        OpInPlaceTest.copySources(temp);
-        Assertions.assertDoesNotThrow(
-            () -> OpInPlaceTest.optimize(temp, "complex"),
-            "Optimization of complex example should not throw an exception"
+    void replacesInObjectsWithDots(@TempDir final Path temp) throws Exception {
+        OpInPlaceTest.copySources(temp.resolve("org/eolang/ineo/in_place"));
+        final String complex = "org.eolang.ineo.in_place.complex";
+        final List<XML> nodes = new XSLDocumentOf(OpInPlaceTest.optimize(temp, complex)).transform(
+            new XMLDocumentOf(
+                new TextOf(
+                    new XmirPath(temp, complex).value()
+                )
+            )
+        ).nodes(
+            "//o[@base='.bar']/o[@base='.new']/o[@base='org.eolang.ineo.in_place.b-inlined' and count(o)=1]"
+        );
+        MatcherAssert.assertThat(
+            "Inlined XMIR file does not exist in target directory",
+            Files.exists(temp.resolve("org/eolang/ineo/in_place/b-inlined.xmir")),
+            Matchers.is(true)
+        );
+        MatcherAssert.assertThat(
+            "Transformation changed main XMIR file incorrectly",
+            nodes,
+            Matchers.hasSize(1)
         );
     }
 

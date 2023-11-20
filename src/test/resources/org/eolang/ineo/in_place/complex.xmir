@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <program dob="2023-11-16T21:46:57"
          ms="246"
-         name="org.ineo.main"
+         name="org.ineo.in_place.main"
          revision="00471b9"
-         source="/Users/maxonfjvipon/code/java/ineo/target/it/eo-xmir-eo/src/main/eo/org/ineo/main.eo"
+         source="/Users/maxonfjvipon/code/java/ineo/target/it/eo-xmir-eo/src/main/eo/org/ineo/in_place/main.eo"
          time="2023-11-17T14:04:18.463356Z"
          version="0.33.0">
-  <listing>+package org.ineo
-    +alias org.eolang.ineo.a
-    +alias org.eolang.ineo.b
+  <listing>+package org.eolang.ineo.in_place
+    +alias org.eolang.ineo.in_place.a
+    +alias org.eolang.ineo.in_place.b
 
     [] &gt; main
     [] &gt; main
@@ -20,12 +20,12 @@
            line="2"
            severity="warning"
            sheet="unsorted-metas"
-           step="0">Meta is out of order: "alias org.eolang.ineo.a"</error>
+           step="0">Meta is out of order: "alias org.eolang.ineo.in_place.a"</error>
     <error check="unsorted-metas"
            line="3"
            severity="warning"
            sheet="unsorted-metas"
-           step="0">Meta is out of order: "alias org.eolang.ineo.b"</error>
+           step="0">Meta is out of order: "alias org.eolang.ineo.in_place.b"</error>
     <error check="missing-home"
            line=""
            severity="warning"
@@ -82,20 +82,20 @@
   <metas>
     <meta line="1">
       <head>package</head>
-      <tail>org.ineo</tail>
-      <part>org.ineo</part>
+      <tail>org.ineo.in_place</tail>
+      <part>org.ineo.in_place</part>
     </meta>
     <meta expanded="" line="2">
       <head>alias</head>
-      <tail>a org.eolang.ineo.a</tail>
+      <tail>a org.eolang.ineo.in_place.a</tail>
       <part>a</part>
-      <part>org.eolang.ineo.a</part>
+      <part>org.eolang.ineo.in_place.a</part>
     </meta>
     <meta expanded="" line="3">
       <head>alias</head>
-      <tail>b org.eolang.ineo.b</tail>
+      <tail>b org.eolang.ineo.in_place.b</tail>
       <part>b</part>
-      <part>org.eolang.ineo.b</part>
+      <part>org.eolang.ineo.in_place.b</part>
     </meta>
     <meta line="7">
       <head>probe</head>
@@ -106,39 +106,39 @@
   <objects>
     <o abstract=""
        line="5"
-       loc="Φ.org.ineo.main"
+       loc="Φ.org.ineo.in_place.main"
        name="main"
        pos="0">
       <o abstract=""
          line="6"
-         loc="Φ.org.ineo.main.main"
+         loc="Φ.org.ineo.in_place.main.main"
          name="main"
          pos="2">
         <o base=".bar"
            line="7"
-           loc="Φ.org.ineo.main.main.φ"
+           loc="Φ.org.ineo.in_place.main.main.φ"
            name="@"
            pos="26">
-          <o base=".new" line="7" loc="Φ.org.ineo.main.main.φ.ρ" pos="22">
-            <o base="org.eolang.ineo.b"
+          <o base=".new" line="7" loc="Φ.org.ineo.in_place.main.main.φ.ρ" pos="22">
+            <o base="org.eolang.ineo.in_place.b"
                line="7"
-               loc="Φ.org.ineo.main.main.φ.ρ.ρ"
+               loc="Φ.org.ineo.in_place.main.main.φ.ρ.ρ"
                pos="5">
               <o base=".new"
                  line="7"
-                 loc="Φ.org.ineo.main.main.φ.ρ.ρ.α0"
+                 loc="Φ.org.ineo.in_place.main.main.φ.ρ.ρ.α0"
                  pos="17">
-                <o base="org.eolang.ineo.a"
+                <o base="org.eolang.ineo.in_place.a"
                    line="7"
-                   loc="Φ.org.ineo.main.main.φ.ρ.ρ.α0.ρ"
+                   loc="Φ.org.ineo.in_place.main.main.φ.ρ.ρ.α0.ρ"
                    pos="8">
                   <o base="org.eolang.string"
                      line="7"
-                     loc="Φ.org.ineo.main.main.φ.ρ.ρ.α0.ρ.α0"
+                     loc="Φ.org.ineo.in_place.main.main.φ.ρ.ρ.α0.ρ.α0"
                      pos="10">
                     <o base="org.eolang.bytes"
                        data="bytes"
-                       loc="Φ.org.ineo.main.main.φ.ρ.ρ.α0.ρ.α0.α0">4A 65 66 66</o>
+                       loc="Φ.org.ineo.in_place.main.main.φ.ρ.ρ.α0.ρ.α0.α0">4A 65 66 66</o>
                   </o>
                 </o>
               </o>
@@ -148,7 +148,7 @@
       </o>
       <o base="main"
          line="8"
-         loc="Φ.org.ineo.main.φ"
+         loc="Φ.org.ineo.in_place.main.φ"
          name="@"
          pos="2"
          ref="6"/>
