@@ -24,17 +24,18 @@
 
 import groovy.xml.XmlSlurper
 
-assert new File(basedir, 'target/generated-sources/xmir/com/exam/BA.xmir')
+file = new File(basedir, 'target/generated-sources/xmir/com/exam/BA.xmir')
+assert file.exists()
 
-def ba = new File(basedir, 'target/generated-sources/xmir/com/exam/BA.xmir').text
-def project = new XmlSlurper().parseText(ba)
+ba = file.text
+project = new XmlSlurper().parseText(ba)
 
-def meta = project.metas.meta.find { it.head.text() == 'package' }
+meta = project.metas.meta.find { it.head.text() == 'package' }
 
 assert meta.tail.text() == 'com/exam'
 assert meta.part.text() == 'com/exam'
 
-def main = new File(basedir, 'target/generated-sources/xmir/com/exam/Main.xmir').text
+main = new File(basedir, 'target/generated-sources/xmir/com/exam/Main.xmir').text
 
 assert main.contains('<o base="com/exam/BA"/>')
 
