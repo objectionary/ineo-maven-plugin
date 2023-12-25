@@ -27,9 +27,11 @@ import com.jcabi.xml.Sources;
 import com.jcabi.xml.XML;
 import com.jcabi.xml.XSL;
 import com.jcabi.xml.XSLDocument;
+import java.nio.file.Path;
 import org.cactoos.Text;
 import org.cactoos.scalar.Sticky;
 import org.cactoos.scalar.Unchecked;
+import org.cactoos.text.TextOf;
 
 /**
  * XSL document of.
@@ -41,6 +43,14 @@ public final class XSLDocumentOf implements XSL {
      * Original document.
      */
     private final Unchecked<XSL> document;
+
+    /**
+     * Ctor.
+     * @param path Path
+     */
+    public XSLDocumentOf(final Path path) {
+        this(new TextOf(path));
+    }
 
     /**
      * Ctor.

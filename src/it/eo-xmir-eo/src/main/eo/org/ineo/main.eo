@@ -1,8 +1,0 @@
-+package org.ineo
-+alias org.eolang.ineo.a
-+alias org.eolang.ineo.b
-
-[] > main
-  [] > main
-    (b (a "Jeff").new).new.bar > @
-  main > @

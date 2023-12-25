@@ -21,17 +21,38 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.eolang.ineo.scenario;
+package org.eolang.ineo;
 
-import com.jcabi.xml.XML;
-import java.util.List;
-import org.cactoos.Func;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import org.cactoos.text.TextOf;
+import org.hamcrest.MatcherAssert;
+import org.hamcrest.Matchers;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
 
 /**
- * Scenario for optimization.
- * @since 0.0.1
+ * Test for {@link Saved}.
+ *
+ * @since 0.1
  */
-public interface Scenario extends Func<XML, List<XML>> {
-    @Override
-    List<XML> apply(XML xml);
+class SavedTest {
+    @Test
+    void savesText(@TempDir final Path dir) throws IOException {
+        final String hello = "Hello";
+        MatcherAssert.assertThat(
+            "Saved amount of bytes should not be empty",
+            new Saved(
+                new TextOf(hello),
+                dir.resolve("hello.txt")
+            ).value(),
+            Matchers.greaterThan(0L)
+        );
+        MatcherAssert.assertThat(
+            "Saved file should exist",
+            Files.exists(dir.resolve("hello.txt")),
+            Matchers.is(true)
+        );
+    }
 }

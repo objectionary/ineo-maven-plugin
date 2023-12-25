@@ -36,7 +36,6 @@ import org.cactoos.io.TeeInput;
 import org.cactoos.scalar.IoChecked;
 import org.cactoos.scalar.LengthOf;
 import org.cactoos.scalar.Unchecked;
-import org.cactoos.text.TextOfScalar;
 
 /**
  * Saved.
@@ -64,38 +63,20 @@ public final class Saved {
 
     /**
      * Ctor.
+     * @param text Text to save
+     * @param target Path to save to
+     */
+    public Saved(final Text text, final Path target) {
+        this(new InputOf(text), () -> target);
+    }
+
+    /**
+     * Ctor.
      * @param xml XML to save
      * @param target Path to save to
      */
     public Saved(final XML xml, final Scalar<Path> target) {
         this(new InputOf(xml::toString), target);
-    }
-
-    /**
-     * Ctor.
-     * @param text Text to save
-     * @param target Path to save to
-     */
-    public Saved(final Text text, final Scalar<Path> target) {
-        this(new InputOf(text), target);
-    }
-
-    /**
-     * Ctor.
-     * @param input Input as string scalar to save
-     * @param target Path to save to
-     */
-    public Saved(final Scalar<? extends String> input, final Path target) {
-        this(input, () -> target);
-    }
-
-    /**
-     * Ctor.
-     * @param input Input to save
-     * @param target Path to save to
-     */
-    public Saved(final Scalar<? extends String> input, final Scalar<Path> target) {
-        this(new InputOf(new TextOfScalar(input)), target);
     }
 
     /**

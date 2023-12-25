@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program dob="2023-12-22T15:38:27.372517Z"
+         ms="1703259507372"
+         name="j$Main"
+         revision="0.0.0"
+         time="2023-12-22T15:38:27.372517Z"
+         version="0.0.0">
+   <listing>yv66vgAAADcAGgoAAgADBwAEDAAFAAYBABBqYXZhL2xhbmcvT2JqZWN0AQAGPGluaXQ+AQADKClWBwAIAQANY29tL2V4YW1wbGUvQgcACgEADWNvbS9leGFtcGxlL0EKAAkADAwABQANAQAEKEkpVgoABwAPDAAFABABABIoTGNvbS9leGFtcGxlL0E7KVYKAAcAEgwAEwAUAQADYmFyAQADKClJBwAWAQAXY29tL2V4YW1wbGUvQXBwbGljYXRpb24BAARDb2RlAQAEbWFpbgEAFihbTGphdmEvbGFuZy9TdHJpbmc7KVYAIQAVAAIAAAAAAAIAAQAFAAYAAQAXAAAAEQABAAEAAAAFKrcAAbEAAAAAAAkAGAAZAAEAFwAAACEABQABAAAAFbsAB1m7AAlZECq3AAu3AA62ABFXsQAAAAAAAA==</listing>
+   <errors/>
+   <sheets/>
+   <license/>
+   <metas>
+      <meta>
+         <head>package</head>
+         <tail>com.exam</tail>
+         <part>com.exam</part>
+      </meta>
+      <meta>
+         <head>alias</head>
+         <tail>org.eolang.jeo.opcode</tail>
+         <part>org.eolang.jeo.opcode</part>
+      </meta>
+      <meta>
+         <head>alias</head>
+         <tail>org.eolang.jeo.label</tail>
+         <part>org.eolang.jeo.label</part>
+      </meta>
+   </metas>
+   <objects>
+      <o abstract="" name="j$Main">
+         <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 21</o>
+         <o base="string" data="bytes" name="supername">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
+         <o base="tuple" data="tuple" name="interfaces"/>
+         <o abstract="" name="new">
+            <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 01</o>
+            <o base="string" data="bytes" name="descriptor">28 29 56</o>
+            <o base="string" data="bytes" name="signature"/>
+            <o base="tuple" data="tuple" name="exceptions"/>
+            <o base="seq" name="@">
+               <o base="tuple">
+                  <o base="opcode" name="ALOAD-39">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
+                  </o>
+                  <o base="opcode" name="INVOKESPECIAL-3A">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B7</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
+                     <o base="string" data="bytes">3C 69 6E 69 74 3E</o>
+                     <o base="string" data="bytes">28 29 56</o>
+                  </o>
+                  <o base="opcode" name="RETURN-3B">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B1</o>
+                  </o>
+               </o>
+            </o>
+            <o base="tuple" name="trycatchblocks"/>
+         </o>
+         <o abstract="" name="j$main">
+            <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 09</o>
+            <o base="string" data="bytes" name="descriptor">28 5B 4C 6A 61 76 61 2F 6C 61 6E 67 2F 53 74 72 69 6E 67 3B 29 56</o>
+            <o base="string" data="bytes" name="signature"/>
+            <o base="tuple" data="tuple" name="exceptions"/>
+            <o abstract="" name="arg__[Ljava/lang/String;__0"/>
+            <o base="seq" name="@">
+               <o base="tuple">
+                  <o base=".bar">
+                     <o base=".new">
+                        <o base="com/exam/B"/>
+                        <o base=".new">
+                           <o base="com/exam/A"/>
+                           <o base="int" data="bytes">00 00 00 00 00 00 00 2A</o>
+                        </o>
+                     </o>
+                  </o>
+                  <o base="opcode" name="RETURN-3C">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B1</o>
+                  </o>
+               </o>
+            </o>
+            <o base="tuple" name="trycatchblocks"/>
+         </o>
+      </o>
+   </objects>
+</program>

@@ -34,6 +34,8 @@ import org.cactoos.scalar.Sticky;
 import org.cactoos.scalar.Unchecked;
 import org.cactoos.text.TextOf;
 import org.w3c.dom.Node;
+import org.xembly.Directive;
+import org.xembly.Xembler;
 
 /**
  * XML document of.
@@ -48,10 +50,26 @@ public final class XMLDocumentOf implements XML {
 
     /**
      * Ctor.
+     * @param other Other xml
+     */
+    public XMLDocumentOf(final XML other) {
+        this(other::toString);
+    }
+
+    /**
+     * Ctor.
      * @param path Path to get file from
      */
     public XMLDocumentOf(final Path path) {
         this(new TextOf(path));
+    }
+
+    /**
+     * Ctor.
+     * @param directives Xembly directives
+     */
+    public XMLDocumentOf(final Iterable<Directive> directives) {
+        this(() -> new Xembler(directives).xml());
     }
 
     /**

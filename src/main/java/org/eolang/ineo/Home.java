@@ -23,11 +23,13 @@
  */
 package org.eolang.ineo;
 
+import java.io.IOException;
 import java.util.Collection;
 import org.cactoos.list.ListOf;
 
 /**
  * Home for objects to save.
+ *
  * @since 0.0.1
  */
 public final class Home {
@@ -46,9 +48,9 @@ public final class Home {
 
     /**
      * Save items.
-     * @throws Exception If fails
+     * @throws IOException If fails.
      */
-    public void save() throws Exception {
+    public void save() throws IOException {
         for (final Saved item : this.items) {
             item.value();
         }

@@ -23,6 +23,6 @@
  */
 
 /**
- * INEO Maven plugin tests.
+ * INEO Maven plugin.
  */
 package org.eolang.ineo;

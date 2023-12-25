@@ -22,58 +22,20 @@
  * SOFTWARE.
  */
 
-import groovy.xml.XmlParser
+import groovy.xml.XmlSlurper
 
-[
-  "target/transpiled-sources/a.xmir",
-  "target/transpiled-sources/b.xmir",
-  "target/transpiled-sources/b-inlined.xmir",
-  "target/transpiled-sources/main.xmir",
-].each { assert new File(basedir, it).exists() }
+assert new File(basedir, 'target/generated-sources/xmir/com/exam/BA.xmir')
 
-def program = new XmlParser().parseText(
-  new File(basedir, "target/transpiled-sources/main.xmir").text
-)
+def ba = new File(basedir, 'target/generated-sources/xmir/com/exam/BA.xmir').text
+def project = new XmlSlurper().parseText(ba)
 
-[
-  program.objects.o.size() == 1,
-  program.objects.o[0].'@name' == 'main',
-  program.objects.o[0].o[0].'@name' == 'main',
-  program.objects.o[0].o[0].o[0].'@name' == 'args',
-  program.objects.o[0].o[0].o[1].'@name' == '@',
-  program.objects.o[0].o[0].o[1].'@base' == '.bar',
-  program.objects.o[0].o[0].o[1].o[0].'@base' == '.new',
-  program.objects.o[0].o[0].o[1].o[0].o[0].'@base' == 'b-inlined',
-  program.objects.o[0].o[0].o[1].o[0].o[0].o.size() == 2,
-  program.objects.o[0].o[0].o[1].o[0].o[0].o[0].'@base' == 'int',
-  program.objects.o[0].o[0].o[1].o[0].o[0].o[1].'@base' == 'int',
-].each { it -> assert it }
+def meta = project.metas.meta.find { it.head.text() == 'package' }
 
-program = new XmlParser().parseText(
-  new File(basedir, "target/transpiled-sources/b-inlined.xmir").text
-)
+assert meta.tail.text() == 'com/exam'
+assert meta.part.text() == 'com/exam'
 
-[
-  program.objects.o[0].'@name' == 'b-inlined',
-  program.objects.o[0].o[0].'@name' == 'a-d',
-  program.objects.o[0].o[1].'@name' == 'z',
-  program.objects.o[0].o[2].'@name' == 'this-a-d',
-  program.objects.o[0].o[2].'@base' == 'cage',
-  program.objects.o[0].o[2].o[0].'@base' == 'a-d',
-  program.objects.o[0].o[3].'@name' == 'this-z',
-  program.objects.o[0].o[3].'@base' == 'cage',
-  program.objects.o[0].o[3].o[0].'@base' == 'z',
-  program.objects.o[0].o[4].'@abstract' == '',
-  program.objects.o[0].o[4].'@name' == 'new',
-  program.objects.o[0].o[4].o[0].'@base' == '^',
-  program.objects.o[0].o[4].o[0].'@name' == '@',
-  program.objects.o[0].o[5].'@abstract' == '',
-  program.objects.o[0].o[5].'@name' == 'this-a-foo',
-  program.objects.o[0].o[5].o[0].o[0].'@base' == 'this-a-d',
-  program.objects.o[0].o[5].o[0].o[1].'@base' == 'int',
-  program.objects.o[0].o[6].'@name' == 'bar',
-  program.objects.o[0].o[6].o[0].o[0].'@base' == 'this-a-foo',
-  program.objects.o[0].o[6].o[0].o[1].'@base' == 'int',
-].each { it -> assert it }
+def main = new File(basedir, 'target/generated-sources/xmir/com/exam/main.xmir').text
+
+assert main.contains('<o base="com/exam/BA"/>')
 
 true

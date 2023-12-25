@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program dob="2023-12-22T16:55:39.833109Z"
+         ms="1703264139833"
+         name="j$B"
+         revision="0.0.0"
+         time="2023-12-22T16:55:39.833109Z"
+         version="0.0.0">
+   <listing>yv66vgAAADQAHAoAAgADBwAEDAAFAAYBABBqYXZhL2xhbmcvT2JqZWN0AQAGPGluaXQ+AQADKClWCQAIAAkHAAoMAAsADAEADWNvbS9leGFtcGxlL0IBAAFhAQAPTGNvbS9leGFtcGxlL0E7CgAOAA8HABAMABEAEgEADWNvbS9leGFtcGxlL0EBAANmb28BAAMoKUkBABIoTGNvbS9leGFtcGxlL0E7KVYBAARDb2RlAQAPTGluZU51bWJlclRhYmxlAQASTG9jYWxWYXJpYWJsZVRhYmxlAQAEdGhpcwEAD0xjb20vZXhhbXBsZS9COwEAA2JhcgEAClNvdXJjZUZpbGUBAAZCLmphdmEAIQAIAAIAAAABAAIACwAMAAAAAgABAAUAEwABABQAAABGAAIAAgAAAAoqtwABKiu1AAexAAAAAgAVAAAADgADAAAABgAEAAcACQAIABYAAAAWAAIAAAAKABcAGAAAAAAACgALAAwAAQABABkAEgABABQAAAA0AAIAAQAAAAoqtAAHtgANBWCsAAAAAgAVAAAABgABAAAACwAWAAAADAABAAAACgAXABgAAAABABoAAAACABs=</listing>
+   <errors/>
+   <sheets/>
+   <license/>
+   <metas>
+      <meta>
+         <head>package</head>
+         <tail>com.exam</tail>
+         <part>com.exam</part>
+      </meta>
+      <meta>
+         <head>alias</head>
+         <tail>org.eolang.jeo.opcode</tail>
+         <part>org.eolang.jeo.opcode</part>
+      </meta>
+      <meta>
+         <head>alias</head>
+         <tail>org.eolang.jeo.label</tail>
+         <part>org.eolang.jeo.label</part>
+      </meta>
+   </metas>
+   <objects>
+      <o abstract="" name="j$B">
+         <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 21</o>
+         <o base="string" data="bytes" name="supername">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
+         <o base="tuple" data="tuple" name="interfaces"/>
+         <o base="field" name="j$a">
+            <o base="int" data="bytes">00 00 00 00 00 00 00 02</o>
+            <o base="string" data="bytes">4C 63 6F 6D 2F 65 78 61 6D 70 6C 65 2F 41 3B</o>
+            <o base="string" data="bytes"/>
+            <o base="string" data="bytes"/>
+         </o>
+         <o abstract="" name="new">
+            <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 01</o>
+            <o base="string" data="bytes" name="descriptor">28 4C 63 6F 6D 2F 65 78 61 6D 70 6C 65 2F 41 3B 29 56</o>
+            <o base="string" data="bytes" name="signature"/>
+            <o base="tuple" data="tuple" name="exceptions"/>
+            <o abstract="" name="arg__Lcom/example/A;__0"/>
+            <o base="seq" name="@">
+               <o base="tuple">
+                  <o base="label">
+                     <o base="string" data="bytes">37 33 35 33 32 33 66 34 2D 37 36 31 63 2D 34 63 37 64 2D 39 63 33 31 2D 64 64 34 64 32 37 37 30 34 35 65 66</o>
+                  </o>
+                  <o base="opcode" name="ALOAD-35">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
+                  </o>
+                  <o base="opcode" name="INVOKESPECIAL-36">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B7</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
+                     <o base="string" data="bytes">3C 69 6E 69 74 3E</o>
+                     <o base="string" data="bytes">28 29 56</o>
+                  </o>
+                  <o base="label">
+                     <o base="string" data="bytes">64 32 34 31 64 35 30 37 2D 31 35 35 30 2D 34 66 63 32 2D 62 33 39 30 2D 38 31 36 34 37 64 63 33 33 36 38 36</o>
+                  </o>
+                  <o base="opcode" name="ALOAD-37">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
+                  </o>
+                  <o base="opcode" name="ALOAD-38">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 01</o>
+                  </o>
+                  <o base="opcode" name="PUTFIELD-39">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B5</o>
+                     <o base="string" data="bytes">63 6F 6D 2F 65 78 61 6D 70 6C 65 2F 42</o>
+                     <o base="string" data="bytes">61</o>
+                     <o base="string" data="bytes">4C 63 6F 6D 2F 65 78 61 6D 70 6C 65 2F 41 3B</o>
+                  </o>
+                  <o base="label">
+                     <o base="string" data="bytes">34 31 61 32 30 64 33 32 2D 61 64 34 30 2D 34 31 38 35 2D 61 64 66 66 2D 64 34 32 66 62 39 66 31 39 65 30 39</o>
+                  </o>
+                  <o base="opcode" name="RETURN-3A">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B1</o>
+                  </o>
+                  <o base="label">
+                     <o base="string" data="bytes">37 38 30 64 34 65 65 64 2D 34 37 39 35 2D 34 38 37 61 2D 61 35 33 62 2D 30 30 30 30 33 30 33 63 66 30 66 61</o>
+                  </o>
+               </o>
+            </o>
+            <o base="tuple" name="trycatchblocks"/>
+         </o>
+         <o abstract="" name="j$bar">
+            <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 01</o>
+            <o base="string" data="bytes" name="descriptor">28 29 49</o>
+            <o base="string" data="bytes" name="signature"/>
+            <o base="tuple" data="tuple" name="exceptions"/>
+            <o base="seq" name="@">
+               <o base="tuple">
+                  <o base="label">
+                     <o base="string" data="bytes">61 31 33 31 38 37 33 63 2D 36 38 31 37 2D 34 36 33 65 2D 62 66 37 61 2D 31 35 33 37 66 62 61 61 38 36 36 66</o>
+                  </o>
+                  <o base="opcode" name="ALOAD-3B">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
+                  </o>
+                  <o base="opcode" name="GETFIELD-3C">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B4</o>
+                     <o base="string" data="bytes">63 6F 6D 2F 65 78 61 6D 70 6C 65 2F 42</o>
+                     <o base="string" data="bytes">61</o>
+                     <o base="string" data="bytes">4C 63 6F 6D 2F 65 78 61 6D 70 6C 65 2F 41 3B</o>
+                  </o>
+                  <o base="opcode" name="INVOKEVIRTUAL-3D">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B6</o>
+                     <o base="string" data="bytes">63 6F 6D 2F 65 78 61 6D 70 6C 65 2F 41</o>
+                     <o base="string" data="bytes">66 6F 6F</o>
+                     <o base="string" data="bytes">28 29 49</o>
+                  </o>
+                  <o base="opcode" name="ICONST_2-3E">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 05</o>
+                  </o>
+                  <o base="opcode" name="IADD-3F">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 60</o>
+                  </o>
+                  <o base="opcode" name="IRETURN-40">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 AC</o>
+                  </o>
+                  <o base="label">
+                     <o base="string" data="bytes">64 38 39 63 39 36 63 62 2D 36 34 37 61 2D 34 31 38 30 2D 61 32 35 37 2D 64 63 37 63 61 36 66 30 34 33 35 64</o>
+                  </o>
+               </o>
+            </o>
+            <o base="tuple" name="trycatchblocks"/>
+         </o>
+      </o>
+   </objects>
+</program>

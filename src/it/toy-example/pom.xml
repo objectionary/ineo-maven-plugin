@@ -52,7 +52,7 @@ SOFTWARE.
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <outputDirectory>${project.basedir}/target/transpiled-sources</outputDirectory>
+              <outputDirectory>${project.basedir}/target/generated-sources/xmir</outputDirectory>
               <resources>
                 <resource>
                   <directory>${project.basedir}/src/main/xmir</directory>
@@ -70,7 +70,7 @@ SOFTWARE.
         <executions>
           <execution>
             <goals>
-              <goal>inline</goal>
+              <goal>fuse</goal>
             </goals>
           </execution>
         </executions>
