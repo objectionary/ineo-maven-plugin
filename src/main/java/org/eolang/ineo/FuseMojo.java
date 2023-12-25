@@ -86,9 +86,7 @@ public final class FuseMojo extends AbstractMojo {
             if (!before.equals(after)) {
                 try {
                     final String pckg = this.sourcesDir.toPath().relativize(file).toString()
-                        .replace(
-                            String.format("/%s", file.getFileName()), ""
-                        );
+                        .replace(String.format("%s%s", File.separator, file.getFileName()), "");
                     new Home(
                         new Saved(after, file),
                         new Saved(
@@ -103,7 +101,7 @@ public final class FuseMojo extends AbstractMojo {
                                 ).xml()
                             ),
                             this.sourcesDir.toPath().resolve(
-                                String.join("/", pckg, "BA.xmir")
+                                String.join(File.separator, pckg, "BA.xmir")
                             )
                         )
                     ).save();
