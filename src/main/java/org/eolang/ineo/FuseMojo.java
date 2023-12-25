@@ -23,6 +23,7 @@
  */
 package org.eolang.ineo;
 
+import com.jcabi.log.Logger;
 import com.jcabi.xml.XML;
 import com.jcabi.xml.XMLDocument;
 import com.jcabi.xml.XSL;
@@ -74,19 +75,25 @@ public final class FuseMojo extends AbstractMojo {
     @Parameter(
         property = "sourcesDir",
         required = true,
-        defaultValue = "${basedir}/target/generated-sources/xmir"
+        defaultValue = "${project.build.directory}/generated-sources/xmir"
     )
     private File sourcesDir;
 
     @Override
     public void execute() {
+        Logger.info(this, "Processing files in %s", this.sourcesDir);
         for (final Path file : new FilesOf(this.sourcesDir)) {
+            Logger.info(this, "Processing %s", file);
             final XML before = new XMLDocumentOf(file);
             final XML after = FuseMojo.TRANSFORMATION.transform(before);
             if (!before.equals(after)) {
+                Logger.info(this, "Found fuse optimization in %s", file.getFileName());
                 try {
                     final String pckg = this.sourcesDir.toPath().relativize(file).toString()
                         .replace(String.format("%s%s", File.separator, file.getFileName()), "");
+                    final Path generated = this.sourcesDir.toPath().resolve(
+                        String.join(File.separator, pckg, "BA.xmir")
+                    );
                     new Home(
                         new Saved(after, file),
                         new Saved(
@@ -100,11 +107,10 @@ public final class FuseMojo extends AbstractMojo {
                                         .set(pckg)
                                 ).xml()
                             ),
-                            this.sourcesDir.toPath().resolve(
-                                String.join(File.separator, pckg, "BA.xmir")
-                            )
+                            generated
                         )
                     ).save();
+                    Logger.info(this, "New XMIR was generated: %s", generated);
                 } catch (final IOException ex) {
                     throw new IllegalStateException("Couldn't save file after transformation", ex);
                 } catch (final ImpossibleModificationException ex) {
@@ -112,5 +118,6 @@ public final class FuseMojo extends AbstractMojo {
                 }
             }
         }
+        Logger.info(this, "Fused %d files", 1);
     }
 }

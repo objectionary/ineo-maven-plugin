@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program dob="2023-12-25T18:10:44.212139Z"
+         ms="1703527844212"
+         name="j$F"
+         revision="0.0.0"
+         time="2023-12-25T18:10:44.212139Z"
+         version="0.0.0">
+   <listing>yv66vgAAADQACQcAAgEACmNvbS9leGFtL0YHAAQBABBqYXZhL2xhbmcvT2JqZWN0AQADZm9vAQADKClJAQAKU291cmNlRmlsZQEABkYuamF2YQYAAAEAAwAAAAAAAQQBAAUABgAAAAEABwAAAAIACA==</listing>
+   <errors/>
+   <sheets/>
+   <license/>
+   <metas>
+      <meta>
+         <head>package</head>
+         <tail>com.exam</tail>
+         <part>com.exam</part>
+      </meta>
+      <meta>
+         <head>alias</head>
+         <tail>org.eolang.jeo.opcode</tail>
+         <part>org.eolang.jeo.opcode</part>
+      </meta>
+      <meta>
+         <head>alias</head>
+         <tail>org.eolang.jeo.label</tail>
+         <part>org.eolang.jeo.label</part>
+      </meta>
+   </metas>
+   <objects>
+      <o abstract="" name="j$F">
+         <o base="int" data="bytes" name="access">00 00 00 00 00 00 06 00</o>
+         <o base="string" data="bytes" name="supername">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
+         <o base="tuple" data="tuple" name="interfaces"/>
+         <o abstract="" name="j$foo">
+            <o base="int" data="bytes" name="access">00 00 00 00 00 00 04 01</o>
+            <o base="string" data="bytes" name="descriptor">28 29 49</o>
+            <o base="string" data="bytes" name="signature"/>
+            <o base="tuple" data="tuple" name="exceptions"/>
+            <o base="seq" name="@">
+               <o base="tuple"/>
+            </o>
+            <o base="tuple" name="trycatchblocks"/>
+         </o>
+      </o>
+   </objects>
+</program>

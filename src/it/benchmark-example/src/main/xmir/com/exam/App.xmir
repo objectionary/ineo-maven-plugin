@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program dob="2023-12-25T18:10:44.220644Z"
+         ms="1703527844220"
+         name="j$App"
+         revision="0.0.0"
+         time="2023-12-25T18:10:44.220644Z"
+         version="0.0.0">
+   <listing>yv66vgAAADQAHwoAAgADBwAEDAAFAAYBABBqYXZhL2xhbmcvT2JqZWN0AQAGPGluaXQ+AQADKClWBwAIAQAKY29tL2V4YW0vQgcACgEACmNvbS9leGFtL0EKAAkADAwABQANAQAEKEkpVgoABwAPDAAFABABAA8oTGNvbS9leGFtL0Y7KVYKAAcAEgwAEwAUAQADYmFyAQADKClJBwAWAQAMY29tL2V4YW0vQXBwAQAEQ29kZQEAD0xpbmVOdW1iZXJUYWJsZQEAEkxvY2FsVmFyaWFibGVUYWJsZQEABHRoaXMBAA5MY29tL2V4YW0vQXBwOwEAA3J1bgEAClNvdXJjZUZpbGUBAAhBcHAuamF2YQAgABUAAgAAAAAAAgAAAAUABgABABcAAAAvAAEAAQAAAAUqtwABsQAAAAIAGAAAAAYAAQAAAAMAGQAAAAwAAQAAAAUAGgAbAAAAAAAcABQAAQAXAAAAPgAFAAEAAAAUuwAHWbsACVkQKrcAC7cADrYAEawAAAACABgAAAAGAAEAAAAFABkAAAAMAAEAAAAUABoAGwAAAAEAHQAAAAIAHg==</listing>
+   <errors/>
+   <sheets/>
+   <license/>
+   <metas>
+      <meta>
+         <head>package</head>
+         <tail>com.exam</tail>
+         <part>com.exam</part>
+      </meta>
+      <meta>
+         <head>alias</head>
+         <tail>org.eolang.jeo.opcode</tail>
+         <part>org.eolang.jeo.opcode</part>
+      </meta>
+      <meta>
+         <head>alias</head>
+         <tail>org.eolang.jeo.label</tail>
+         <part>org.eolang.jeo.label</part>
+      </meta>
+   </metas>
+   <objects>
+      <o abstract="" name="j$App">
+         <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 20</o>
+         <o base="string" data="bytes" name="supername">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
+         <o base="tuple" data="tuple" name="interfaces"/>
+         <o abstract="" name="new">
+            <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 00</o>
+            <o base="string" data="bytes" name="descriptor">28 29 56</o>
+            <o base="string" data="bytes" name="signature"/>
+            <o base="tuple" data="tuple" name="exceptions"/>
+            <o base="seq" name="@">
+               <o base="tuple">
+                  <o base="label">
+                     <o base="string" data="bytes">38 37 35 39 64 65 30 66 2D 33 62 64 65 2D 34 62 34 31 2D 38 64 63 35 2D 32 34 62 38 35 62 66 63 66 36 61 63</o>
+                  </o>
+                  <o base="opcode" name="ALOAD-3B">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
+                  </o>
+                  <o base="opcode" name="INVOKESPECIAL-3C">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B7</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
+                     <o base="string" data="bytes">3C 69 6E 69 74 3E</o>
+                     <o base="string" data="bytes">28 29 56</o>
+                  </o>
+                  <o base="opcode" name="RETURN-3D">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B1</o>
+                  </o>
+                  <o base="label">
+                     <o base="string" data="bytes">37 33 63 66 32 37 31 62 2D 61 38 35 39 2D 34 30 61 34 2D 38 32 32 37 2D 63 30 30 61 61 37 35 61 32 32 35 32</o>
+                  </o>
+               </o>
+            </o>
+            <o base="tuple" name="trycatchblocks"/>
+         </o>
+         <o abstract="" name="j$run">
+            <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 00</o>
+            <o base="string" data="bytes" name="descriptor">28 29 49</o>
+            <o base="string" data="bytes" name="signature"/>
+            <o base="tuple" data="tuple" name="exceptions"/>
+            <o base="seq" name="@">
+               <o base="tuple">
+                  <o base=".bar">
+                     <o base=".new">
+                        <o base="com/exam/B"/>
+                        <o base=".new">
+                           <o base="com/exam/A"/>
+                           <o base="int" data="bytes">00 00 00 00 00 00 00 2A</o>
+                        </o>
+                     </o>
+                  </o>
+                  <o base="opcode" name="IRETURN-46">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 AC</o>
+                  </o>
+                  <o base="label">
+                     <o base="string" data="bytes">61 35 62 34 33 32 37 64 2D 37 32 63 32 2D 34 65 32 62 2D 38 35 39 39 2D 33 33 63 39 39 31 32 65 66 64 63 64</o>
+                  </o>
+               </o>
+            </o>
+            <o base="tuple" name="trycatchblocks"/>
+         </o>
+      </o>
+   </objects>
+</program>
