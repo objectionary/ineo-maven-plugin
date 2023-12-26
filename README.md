@@ -49,6 +49,10 @@ next one:
 
 Objects `A` and `B` must be from the same package and have the same prefix.
 
+[Here](https://github.com/objectionary/benchmark) you may find a working example that uses the 
+plugin with other optimization tools, like [JEO](https://github.com/objectionary/jeo-maven-plugin) 
+and [OPEO](https://github.com/objectionary/opeo-maven-plugin)
+
 ## Invoke the plugin from the Maven lifecycle
 
 You can run the plugin from the Maven lifecycle by adding the following
