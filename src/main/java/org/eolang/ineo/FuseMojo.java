@@ -73,11 +73,22 @@ public final class FuseMojo extends AbstractMojo {
      * @checkstyle MemberNameCheck (10 lines)
      */
     @Parameter(
-        property = "sourcesDir",
+        property = "ineo.sourcesDir",
         required = true,
         defaultValue = "${project.build.directory}/generated-sources/xmir"
     )
     private File sourcesDir;
+
+    /**
+     * Output directory.
+     * @checkstyle MemberNameCheck (10 lines)
+     */
+    @Parameter(
+        property = "ineo.outputDir",
+        required = true,
+        defaultValue = "${project.build.directory}/generated-output-sources/xmir"
+    )
+    private File outputDir;
 
     @Override
     public void execute() {
@@ -86,16 +97,25 @@ public final class FuseMojo extends AbstractMojo {
             Logger.info(this, "Processing %s", file);
             final XML before = new XMLDocumentOf(file);
             final XML after = FuseMojo.TRANSFORMATION.transform(before);
-            if (!before.equals(after)) {
+            final Path path = this.outputDir.toPath().resolve(
+                this.sourcesDir.toPath().relativize(file)
+            );
+            if (before.equals(after)) {
+                try {
+                    new Saved(before, path).value();
+                } catch (final IOException ex) {
+                    throw new IllegalStateException("Couldn't save file to output directory", ex);
+                }
+            } else {
                 Logger.info(this, "Found fuse optimization in %s", file.getFileName());
                 try {
                     final String pckg = this.sourcesDir.toPath().relativize(file).toString()
                         .replace(String.format("%s%s", File.separator, file.getFileName()), "");
-                    final Path generated = this.sourcesDir.toPath().resolve(
+                    final Path generated = this.outputDir.toPath().resolve(
                         String.join(File.separator, pckg, "BA.xmir")
                     );
                     new Home(
-                        new Saved(after, file),
+                        new Saved(after, path),
                         new Saved(
                             new XMLDocument(
                                 new Xembler(
