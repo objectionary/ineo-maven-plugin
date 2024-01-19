@@ -34,7 +34,7 @@ SOFTWARE.
   <packaging>maven-plugin</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>ineo</name>
-  <url>https://github.com/objectionary/ineo-maven-plugin</url>
+  <url>https://objectionary.github.io/ineo-maven-plugin</url>
   <description>EOLANG inliner</description>
   <inceptionYear>2023</inceptionYear>
   <organization>
@@ -200,6 +200,22 @@ SOFTWARE.
         <filtering>false</filtering>
       </testResource>
     </testResources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-plugin-plugin</artifactId>
+        <configuration>
+          <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
+        </configuration>
+        <executions>
+          <execution>
+            <id>mojo-descriptor</id>
+            <goals>
+              <goal>descriptor</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
   <profiles>
     <profile>

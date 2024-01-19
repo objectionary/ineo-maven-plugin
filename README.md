@@ -80,6 +80,9 @@ configuration to your `pom.xml` file:
 </build>
 ```
 
+More details about plugin usage you can find in our
+[Maven site](https://objectionary.github.io/ineo-maven-plugin).
+
 ## How to Contribute
 
 Fork repository, make changes, then send us
