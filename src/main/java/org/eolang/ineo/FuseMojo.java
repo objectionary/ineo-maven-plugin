@@ -86,7 +86,7 @@ public final class FuseMojo extends AbstractMojo {
     @Parameter(
         property = "ineo.outputDir",
         required = true,
-        defaultValue = "${project.build.directory}/generated-output-sources/xmir"
+        defaultValue = "${project.build.directory}/generated-sources/fused-xmir"
     )
     private File outputDir;
 

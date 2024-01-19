@@ -74,9 +74,6 @@ SOFTWARE.
             </goals>
           </execution>
         </executions>
-        <configuration>
-          <ineo.outputDir>${project.basedir}/target/generated-output-sources/xmir</ineo.outputDir>
-        </configuration>
       </plugin>
     </plugins>
   </build>

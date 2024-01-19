@@ -24,7 +24,7 @@
 
 import groovy.xml.XmlSlurper
 
-file = new File(basedir, 'target/generated-output-sources/xmir/com/exam/BA.xmir')
+file = new File(basedir, 'target/generated-sources/fused-xmir/com/exam/BA.xmir')
 assert file.exists()
 
 true

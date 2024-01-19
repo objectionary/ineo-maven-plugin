@@ -72,9 +72,6 @@ SOFTWARE.
             <goals>
               <goal>fuse</goal>
             </goals>
-            <configuration>
-              <outputDir>${project.basedir}/target/generated-output-sources/xmir</outputDir>
-            </configuration>
           </execution>
         </executions>
       </plugin>
