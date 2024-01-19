@@ -23,6 +23,7 @@
  */
 package org.eolang.ineo;
 
+import com.jcabi.log.Logger;
 import com.jcabi.xml.XML;
 import java.io.IOException;
 import java.nio.file.Path;
@@ -114,9 +115,12 @@ public final class Saved {
     public Long value() throws IOException {
         try {
             return new IoChecked<>(
-                () -> this.origin.apply(
-                    this.path.value()
-                )
+                () -> {
+                    final Path file = this.path.value();
+                    final long size = this.origin.apply(file);
+                    Logger.info(this, "Written file: %s", file);
+                    return size;
+                }
             ).value();
         } catch (final IOException ex) {
             throw new IOException(
