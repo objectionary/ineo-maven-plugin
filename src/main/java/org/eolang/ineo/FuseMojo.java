@@ -104,7 +104,10 @@ public final class FuseMojo extends AbstractMojo {
                 try {
                     new Saved(before, path).value();
                 } catch (final IOException ex) {
-                    throw new IllegalStateException("Couldn't save file to output directory", ex);
+                    throw new IllegalStateException(
+                        String.format("Couldn't rewrite XMIR to output directory: %s", path),
+                        ex
+                    );
                 }
             } else {
                 Logger.info(this, "Found fuse optimization in %s", file.getFileName());
@@ -132,7 +135,7 @@ public final class FuseMojo extends AbstractMojo {
                     ).save();
                     Logger.info(this, "New XMIR was generated: %s", generated);
                 } catch (final IOException ex) {
-                    throw new IllegalStateException("Couldn't save file after transformation", ex);
+                    throw new IllegalStateException("Couldn't save XMIR after transformation", ex);
                 } catch (final ImpossibleModificationException ex) {
                     throw new IllegalStateException("Couldn't transform fused XMIR", ex);
                 }
