@@ -12,8 +12,8 @@
    <metas>
       <meta>
          <head>package</head>
-         <tail>com.exam</tail>
-         <part>com.exam</part>
+         <tail>org.eolang.benchmark</tail>
+         <part>org.eolang.benchmark</part>
       </meta>
       <meta>
          <head>alias</head>
@@ -70,9 +70,9 @@
                <o base="tuple">
                   <o base=".bar">
                      <o base=".new">
-                        <o base="com/exam/B"/>
+                        <o base="org/eolang/benchmark/B"/>
                         <o base=".new">
-                           <o base="com/exam/A"/>
+                           <o base="org/eolang/benchmark/A"/>
                            <o base="int" data="bytes">00 00 00 00 00 00 00 2A</o>
                         </o>
                      </o>

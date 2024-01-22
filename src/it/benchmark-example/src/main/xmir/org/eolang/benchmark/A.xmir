@@ -12,8 +12,8 @@
    <metas>
       <meta>
          <head>package</head>
-         <tail>com.exam</tail>
-         <part>com.exam</part>
+         <tail>org.eolang.benchmark</tail>
+         <part>org.eolang.benchmark</part>
       </meta>
       <meta>
          <head>alias</head>

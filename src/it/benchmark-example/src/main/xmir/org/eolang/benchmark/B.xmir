@@ -12,8 +12,8 @@
    <metas>
       <meta>
          <head>package</head>
-         <tail>com.exam</tail>
-         <part>com.exam</part>
+         <tail>org.eolang.benchmark</tail>
+         <part>org.eolang.benchmark</part>
       </meta>
       <meta>
          <head>alias</head>
@@ -42,7 +42,7 @@
             <o base="string" data="bytes" name="descriptor">28 4C 63 6F 6D 2F 65 78 61 6D 2F 46 3B 29 56</o>
             <o base="string" data="bytes" name="signature"/>
             <o base="tuple" data="tuple" name="exceptions"/>
-            <o abstract="" name="arg__Lcom/exam/F;__0"/>
+            <o abstract="" name="arg__Lorg/eolang/benchmark/F;__0"/>
             <o base="seq" name="@">
                <o base="tuple">
                   <o base="label">

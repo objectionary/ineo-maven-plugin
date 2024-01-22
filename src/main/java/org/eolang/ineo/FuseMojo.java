@@ -113,9 +113,14 @@ public final class FuseMojo extends AbstractMojo {
                 Logger.info(this, "Found fuse optimization in %s", file.getFileName());
                 try {
                     final String pckg = this.sourcesDir.toPath().relativize(file).toString()
-                        .replace(String.format("%s%s", File.separator, file.getFileName()), "");
+                        .replace(String.format("%s%s", File.separator, file.getFileName()), "")
+                        .replaceAll(String.format("\\%s", File.separator), ".");
                     final Path generated = this.outputDir.toPath().resolve(
-                        String.join(File.separator, pckg, "BA.xmir")
+                        String.join(
+                            File.separator,
+                            pckg.replaceAll("\\.", File.separator),
+                            "BA.xmir"
+                        )
                     );
                     new Home(
                         new Saved(after, path),
