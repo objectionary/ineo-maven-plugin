@@ -19,8 +19,10 @@ lighter EO code.
 # How to use
 
 To run the plugin you need at least Maven 3.1.+ and Java 11+.
-The plugin provides single `fuse` optimization that scans the directory and checks if there's any
-`.xmir` file where the next code occurs:
+The plugin provides two optimizations:
+
+### FUSE 
+The optimization scans the directory and checks if there's any`.xmir` file where the next code occurs:
 
 ```xml
 <o base=".new">
@@ -47,6 +49,37 @@ next one:
 </o>
 ```
 
+### STATICIZE
+The optimization scans the directory and checks if there's any`.xmir` file where the next code occurs:
+
+```xml
+<o base=".get">
+  <o base=".new">
+    <o base="A"/>
+    <o base="int" data="bytes">
+      <!-- BYTES HERE -->
+    </o>
+  </o>
+</o>
+```
+
+The plugin adds new staticized `StaticizedA.xmir` file into the directory and replaces the `xmir` above with the
+next one:
+
+```xml
+
+<o base=".get">
+  <o base=".new">
+    <o base="StaticizedA"/>
+    <o base="int" data="bytes">
+      <!-- BYTES HERE -->
+    </o>
+  </o>
+</o>
+```
+
+Meantime `StaticizedA` will use static method instead of instance one. 
+
 Objects `A` and `B` must be from the same package and have the same prefix.
 
 [Here](https://github.com/objectionary/benchmark) you may find a working example that uses the 
@@ -65,10 +98,17 @@ configuration to your `pom.xml` file:
     <plugin>
       <groupId>org.eolang</groupId>
       <artifactId>ineo-maven-plugin</artifactId>
-      <version>0.1.2</version>
+      <version>0.2.0</version>
       <executions>
         <execution>
           <id>fuse</id>
+          <phase>generate-sources</phase>
+          <goals>
+            <goal>fuse</goal>
+          </goals>
+        </execution>
+        <execution>
+          <id>staticize</id>
           <phase>generate-sources</phase>
           <goals>
             <goal>fuse</goal>
