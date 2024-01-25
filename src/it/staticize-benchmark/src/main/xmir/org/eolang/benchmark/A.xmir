@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program dob="2024-01-25T11:06:51.815602Z"
+         ms="1706180811815"
+         name="j$A"
+         revision="0.0.0"
+         time="2024-01-25T11:06:51.815602Z"
+         version="0.0.0">
+   <listing>yv66vgAAADQAHAoAAgADBwAEDAAFAAYBABBqYXZhL2xhbmcvT2JqZWN0AQAGPGluaXQ+AQADKClWCQAIAAkHAAoMAAsADAEAFm9yZy9lb2xhbmcvYmVuY2htYXJrL0EBAAFkAQABSQoACAAODAAFAA8BAAQoSSlWCgAIABEMABIAEwEAA2dldAEAAygpSQEABENvZGUBAA9MaW5lTnVtYmVyVGFibGUBABJMb2NhbFZhcmlhYmxlVGFibGUBAAR0aGlzAQAYTG9yZy9lb2xhbmcvYmVuY2htYXJrL0E7AQANU3RhY2tNYXBUYWJsZQEAClNvdXJjZUZpbGUBAAZBLmphdmEAIAAIAAIAAAABAAIACwAMAAAAAgAAAAUADwABABQAAABGAAIAAgAAAAoqtwABKhu1AAexAAAAAgAVAAAADgADAAAAHAAEAB0ACQAeABYAAAAWAAIAAAAKABcAGAAAAAAACgALAAwAAQABABIAEwABABQAAABYAAQAAQAAAB0qtAAHnQAIKrQAB6y7AAhZKrQABwRktwANtgAQrAAAAAMAFQAAAA4AAwAAACAABwAhAAwAIwAWAAAADAABAAAAHQAXABgAAAAZAAAAAwABDAABABoAAAACABs=</listing>
+   <errors/>
+   <sheets/>
+   <license/>
+   <metas>
+      <meta>
+         <head>package</head>
+         <tail>org.eolang.benchmark</tail>
+         <part>org.eolang.benchmark</part>
+      </meta>
+      <meta>
+         <head>alias</head>
+         <tail>org.eolang.jeo.opcode</tail>
+         <part>org.eolang.jeo.opcode</part>
+      </meta>
+      <meta>
+         <head>alias</head>
+         <tail>org.eolang.jeo.label</tail>
+         <part>org.eolang.jeo.label</part>
+      </meta>
+   </metas>
+   <objects>
+      <o abstract="" name="j$A">
+         <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 20</o>
+         <o base="string" data="bytes" name="supername">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
+         <o base="tuple" name="interfaces" star=""/>
+         <o base="field" name="j$d">
+            <o base="int" data="bytes">00 00 00 00 00 00 00 02</o>
+            <o base="string" data="bytes">49</o>
+            <o base="string" data="bytes"/>
+            <o base="string" data="bytes"/>
+         </o>
+         <o abstract="" name="new">
+            <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 00</o>
+            <o base="string" data="bytes" name="descriptor">28 49 29 56</o>
+            <o base="string" data="bytes" name="signature"/>
+            <o base="tuple" name="exceptions" star=""/>
+            <o abstract="" name="arg__I__0"/>
+            <o base="seq" name="@">
+               <o base="tuple" star="">
+                  <o base="label">
+                     <o base="string" data="bytes">61 37 39 30 64 62 31 66 2D 34 36 35 61 2D 34 32 31 66 2D 62 37 64 32 2D 62 65 39 63 32 64 64 33 64 64 37 32</o>
+                  </o>
+                  <o base="opcode" line="999" name="ALOAD-14">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
+                  </o>
+                  <o base="opcode" line="999" name="INVOKESPECIAL-15">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B7</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
+                     <o base="string" data="bytes">3C 69 6E 69 74 3E</o>
+                     <o base="string" data="bytes">28 29 56</o>
+                  </o>
+                  <o base="label">
+                     <o base="string" data="bytes">36 61 63 66 36 32 62 66 2D 31 66 66 30 2D 34 61 37 30 2D 61 61 66 66 2D 37 62 32 32 33 36 33 62 39 36 32 62</o>
+                  </o>
+                  <o base="opcode" line="999" name="ALOAD-16">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
+                  </o>
+                  <o base="opcode" line="999" name="ILOAD-17">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 15</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 01</o>
+                  </o>
+                  <o base="opcode" line="999" name="PUTFIELD-18">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B5</o>
+                     <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 41</o>
+                     <o base="string" data="bytes">64</o>
+                     <o base="string" data="bytes">49</o>
+                  </o>
+                  <o base="label">
+                     <o base="string" data="bytes">64 30 39 63 61 30 65 64 2D 64 34 30 66 2D 34 38 35 63 2D 61 35 32 31 2D 63 63 33 66 66 37 63 38 35 63 38 61</o>
+                  </o>
+                  <o base="opcode" line="999" name="RETURN-19">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B1</o>
+                  </o>
+                  <o base="label">
+                     <o base="string" data="bytes">34 30 37 66 64 61 31 65 2D 39 37 64 61 2D 34 61 36 63 2D 38 61 31 66 2D 64 37 33 36 62 39 37 64 64 35 37 64</o>
+                  </o>
+               </o>
+            </o>
+         </o>
+         <o abstract="" name="j$get">
+            <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 01</o>
+            <o base="string" data="bytes" name="descriptor">28 29 49</o>
+            <o base="string" data="bytes" name="signature"/>
+            <o base="tuple" name="exceptions" star=""/>
+            <o base="seq" name="@">
+               <o base="tuple" star="">
+                  <o base="label">
+                     <o base="string" data="bytes">65 37 32 63 66 62 33 35 2D 31 39 65 36 2D 34 39 33 31 2D 38 63 30 30 2D 32 62 62 34 38 34 61 36 34 34 30 30</o>
+                  </o>
+                  <o base="opcode" line="999" name="ALOAD-1A">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
+                  </o>
+                  <o base="opcode" line="999" name="GETFIELD-1B">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B4</o>
+                     <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 41</o>
+                     <o base="string" data="bytes">64</o>
+                     <o base="string" data="bytes">49</o>
+                  </o>
+                  <o base="opcode" line="999" name="IFGT-1C">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 9D</o>
+                     <o base="label">
+                        <o base="string" data="bytes">38 39 39 31 64 37 63 62 2D 32 37 36 63 2D 34 64 35 30 2D 62 32 64 63 2D 38 61 64 63 30 32 33 64 63 66 34 37</o>
+                     </o>
+                  </o>
+                  <o base="label">
+                     <o base="string" data="bytes">33 33 31 30 61 31 32 64 2D 32 64 61 62 2D 34 31 62 39 2D 38 37 36 31 2D 35 62 30 37 36 32 37 62 36 63 63 31</o>
+                  </o>
+                  <o base="opcode" line="999" name="ALOAD-1D">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
+                  </o>
+                  <o base="opcode" line="999" name="GETFIELD-1E">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B4</o>
+                     <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 41</o>
+                     <o base="string" data="bytes">64</o>
+                     <o base="string" data="bytes">49</o>
+                  </o>
+                  <o base="opcode" line="999" name="IRETURN-1F">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 AC</o>
+                  </o>
+                  <o base="label">
+                     <o base="string" data="bytes">38 39 39 31 64 37 63 62 2D 32 37 36 63 2D 34 64 35 30 2D 62 32 64 63 2D 38 61 64 63 30 32 33 64 63 66 34 37</o>
+                  </o>
+                  <o base="opcode" line="999" name="NEW-20">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 BB</o>
+                     <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 41</o>
+                  </o>
+                  <o base="opcode" line="999" name="DUP-21">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 59</o>
+                  </o>
+                  <o base="opcode" line="999" name="ALOAD-22">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
+                  </o>
+                  <o base="opcode" line="999" name="GETFIELD-23">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B4</o>
+                     <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 41</o>
+                     <o base="string" data="bytes">64</o>
+                     <o base="string" data="bytes">49</o>
+                  </o>
+                  <o base="opcode" line="999" name="ICONST_1-24">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 04</o>
+                  </o>
+                  <o base="opcode" line="999" name="ISUB-25">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 64</o>
+                  </o>
+                  <o base="opcode" line="999" name="INVOKESPECIAL-26">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B7</o>
+                     <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 41</o>
+                     <o base="string" data="bytes">3C 69 6E 69 74 3E</o>
+                     <o base="string" data="bytes">28 49 29 56</o>
+                  </o>
+                  <o base="opcode" line="999" name="INVOKEVIRTUAL-27">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B6</o>
+                     <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 41</o>
+                     <o base="string" data="bytes">67 65 74</o>
+                     <o base="string" data="bytes">28 29 49</o>
+                  </o>
+                  <o base="opcode" line="999" name="IRETURN-28">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 AC</o>
+                  </o>
+                  <o base="label">
+                     <o base="string" data="bytes">64 63 34 62 34 66 65 63 2D 61 66 64 30 2D 34 63 30 32 2D 61 39 38 38 2D 32 66 36 65 61 62 37 64 61 37 66 33</o>
+                  </o>
+               </o>
+            </o>
+         </o>
+      </o>
+   </objects>
+</program>
