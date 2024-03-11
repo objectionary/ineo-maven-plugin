@@ -45,9 +45,7 @@
             <o abstract="" name="arg__I__0"/>
             <o base="seq" name="@">
                <o base="tuple" star="">
-                  <o base="label">
-                     <o base="string" data="bytes">38 61 38 37 66 63 62 65 2D 66 66 33 38 2D 34 32 64 63 2D 62 66 61 35 2D 30 65 32 35 39 65 61 36 64 65 32 39</o>
-                  </o>
+                  <o base="label" data="bytes">38 61 38 37 66 63 62 65 2D 66 66 33 38 2D 34 32 64 63 2D 62 66 61 35 2D 30 65 32 35 39 65 61 36 64 65 32 39</o>
                   <o base="opcode" line="999" name="ALOAD-1">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
                      <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
@@ -58,9 +56,7 @@
                      <o base="string" data="bytes">3C 69 6E 69 74 3E</o>
                      <o base="string" data="bytes">28 29 56</o>
                   </o>
-                  <o base="label">
-                     <o base="string" data="bytes">61 39 32 32 66 34 63 64 2D 31 36 34 61 2D 34 61 37 32 2D 38 66 36 66 2D 64 32 64 31 37 36 37 37 39 35 33 31</o>
-                  </o>
+                  <o base="label" data="bytes">61 39 32 32 66 34 63 64 2D 31 36 34 61 2D 34 61 37 32 2D 38 66 36 66 2D 64 32 64 31 37 36 37 37 39 35 33 31</o>
                   <o base="opcode" line="999" name="ALOAD-3">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
                      <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
@@ -75,15 +71,11 @@
                      <o base="string" data="bytes">64</o>
                      <o base="string" data="bytes">49</o>
                   </o>
-                  <o base="label">
-                     <o base="string" data="bytes">33 61 34 36 37 39 32 33 2D 35 32 36 64 2D 34 38 32 33 2D 62 62 38 62 2D 63 31 35 36 66 31 34 65 65 35 34 39</o>
-                  </o>
+                  <o base="label" data="bytes">33 61 34 36 37 39 32 33 2D 35 32 36 64 2D 34 38 32 33 2D 62 62 38 62 2D 63 31 35 36 66 31 34 65 65 35 34 39</o>
                   <o base="opcode" line="999" name="RETURN-6">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 B1</o>
                   </o>
-                  <o base="label">
-                     <o base="string" data="bytes">38 32 33 35 63 34 66 65 2D 61 31 64 36 2D 34 36 64 63 2D 39 34 36 37 2D 34 31 61 65 34 35 38 39 34 30 63 31</o>
-                  </o>
+                  <o base="label" data="bytes">38 32 33 35 63 34 66 65 2D 61 31 64 36 2D 34 36 64 63 2D 39 34 36 37 2D 34 31 61 65 34 35 38 39 34 30 63 31</o>
                </o>
             </o>
          </o>
@@ -94,9 +86,7 @@
             <o base="tuple" name="exceptions" star=""/>
             <o base="seq" name="@">
                <o base="tuple" star="">
-                  <o base="label">
-                     <o base="string" data="bytes">63 34 63 34 37 61 38 61 2D 34 32 35 30 2D 34 63 61 63 2D 61 31 31 33 2D 33 33 62 35 65 32 61 39 38 37 65 36</o>
-                  </o>
+                  <o base="label" data="bytes">63 34 63 34 37 61 38 61 2D 34 32 35 30 2D 34 63 61 63 2D 61 31 31 33 2D 33 33 62 35 65 32 61 39 38 37 65 36</o>
                   <o base="opcode" line="999" name="ALOAD-7">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
                      <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
@@ -116,9 +106,7 @@
                   <o base="opcode" line="999" name="IRETURN-A">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 AC</o>
                   </o>
-                  <o base="label">
-                     <o base="string" data="bytes">61 37 65 38 62 61 30 62 2D 37 61 65 34 2D 34 66 39 39 2D 62 39 37 32 2D 66 66 64 66 31 37 31 34 34 62 32 32</o>
-                  </o>
+                  <o base="label" data="bytes">61 37 65 38 62 61 30 62 2D 37 61 65 34 2D 34 66 39 39 2D 62 39 37 32 2D 66 66 64 66 31 37 31 34 34 62 32 32</o>
                </o>
             </o>
          </o>
@@ -130,22 +118,16 @@
             <o abstract="" name="arg__I__0"/>
             <o base="seq" name="@">
                <o base="tuple" star="">
-                  <o base="label">
-                     <o base="string" data="bytes">63 38 30 66 63 62 34 37 2D 39 30 61 30 2D 34 30 62 64 2D 62 63 36 64 2D 31 35 31 39 31 37 37 39 34 34 63 61</o>
-                  </o>
+                  <o base="label" data="bytes">63 38 30 66 63 62 34 37 2D 39 30 61 30 2D 34 30 62 64 2D 62 63 36 64 2D 31 35 31 39 31 37 37 39 34 34 63 61</o>
                   <o base="opcode" line="999" name="ILOAD-B">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 15</o>
                      <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
                   </o>
                   <o base="opcode" line="999" name="IFGT-C">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 9D</o>
-                     <o base="label">
-                        <o base="string" data="bytes">61 33 38 63 31 34 65 31 2D 37 39 61 34 2D 34 38 35 32 2D 39 31 66 38 2D 64 62 36 36 66 34 34 37 31 66 30 30</o>
-                     </o>
+                     <o base="label" data="bytes">61 33 38 63 31 34 65 31 2D 37 39 61 34 2D 34 38 35 32 2D 39 31 66 38 2D 64 62 36 36 66 34 34 37 31 66 30 30</o>
                   </o>
-                  <o base="label">
-                     <o base="string" data="bytes">31 64 64 64 39 65 39 63 2D 64 62 34 64 2D 34 65 63 35 2D 39 31 34 62 2D 34 38 31 66 66 61 31 36 31 33 39 34</o>
-                  </o>
+                  <o base="label" data="bytes">31 64 64 64 39 65 39 63 2D 64 62 34 64 2D 34 65 63 35 2D 39 31 34 62 2D 34 38 31 66 66 61 31 36 31 33 39 34</o>
                   <o base="opcode" line="999" name="ILOAD-D">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 15</o>
                      <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
@@ -153,9 +135,7 @@
                   <o base="opcode" line="999" name="IRETURN-E">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 AC</o>
                   </o>
-                  <o base="label">
-                     <o base="string" data="bytes">61 33 38 63 31 34 65 31 2D 37 39 61 34 2D 34 38 35 32 2D 39 31 66 38 2D 64 62 36 36 66 34 34 37 31 66 30 30</o>
-                  </o>
+                  <o base="label" data="bytes">61 33 38 63 31 34 65 31 2D 37 39 61 34 2D 34 38 35 32 2D 39 31 66 38 2D 64 62 36 36 66 34 34 37 31 66 30 30</o>
                   <o base="opcode" line="999" name="ILOAD-F">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 15</o>
                      <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
@@ -175,9 +155,7 @@
                   <o base="opcode" line="999" name="IRETURN-13">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 AC</o>
                   </o>
-                  <o base="label">
-                     <o base="string" data="bytes">64 32 39 65 62 61 38 32 2D 65 64 32 35 2D 34 35 30 36 2D 39 31 38 38 2D 63 32 39 33 30 37 39 66 34 33 38 65</o>
-                  </o>
+                  <o base="label" data="bytes">64 32 39 65 62 61 38 32 2D 65 64 32 35 2D 34 35 30 36 2D 39 31 38 38 2D 63 32 39 33 30 37 39 66 34 33 38 65</o>
                </o>
             </o>
          </o>
