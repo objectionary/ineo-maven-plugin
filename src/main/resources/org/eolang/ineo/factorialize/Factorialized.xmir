@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program dob="2024-06-06T14:49:07.516206Z"
+         ms="1717685347516"
+         name="j$Factorialized"
+         revision="0.0.0"
+         time="2024-06-06T14:49:07.516206Z"
+         version="0.0.0">
+   <listing>yv66vgAAADQAHgoAAgADBwAEDAAFAAYBABBqYXZhL2xhbmcvT2JqZWN0AQAGPGluaXQ+AQADKClWCQAIAAkHAAoMAAsADAEAIm9yZy9lb2xhbmcvYmVuY2htYXJrL0ZhY3RvcmlhbGl6ZWQBAAFkAQABSQoACAAODAAPABABAAR4Z2V0AQAEKEkpSQEABChJKVYBAARDb2RlAQAPTGluZU51bWJlclRhYmxlAQASTG9jYWxWYXJpYWJsZVRhYmxlAQAEdGhpcwEAJExvcmcvZW9sYW5nL2JlbmNobWFyay9GYWN0b3JpYWxpemVkOwEAEE1ldGhvZFBhcmFtZXRlcnMBAANnZXQBAAMoKUkBAAJ4ZAEADVN0YWNrTWFwVGFibGUBAApTb3VyY2VGaWxlAQASRmFjdG9yaWFsaXplZC5qYXZhACAACAACAAAAAQACAAsADAAAAAMAAAAFABEAAgASAAAARgACAAIAAAAKKrcAASobtQAHsQAAAAIAEwAAAA4AAwAAACkABAAqAAkAKwAUAAAAFgACAAAACgAVABYAAAAAAAoACwAMAAEAFwAAAAUBAAsAAAABABgAGQABABIAAAAyAAEAAQAAAAgqtAAHuAANrAAAAAIAEwAAAAYAAQAAADIAFAAAAAwAAQAAAAgAFQAWAAAACQAPABAAAgASAAAASwACAAEAAAAQGgSjAAUErBoEZLgADRporAAAAAMAEwAAAA4AAwAAADYABQA3AAcAOQAUAAAADAABAAAAEAAaAAwAAAAbAAAAAwABBwAXAAAABQEAGgAAAAEAHAAAAAIAHQ==</listing>
+   <errors/>
+   <sheets/>
+   <license/>
+   <metas>
+      <meta>
+         <head>package</head>
+         <tail>org.eolang.benchmark</tail>
+         <part>org.eolang.benchmark</part>
+      </meta>
+      <meta>
+         <head>alias</head>
+         <tail>org.eolang.jeo.opcode</tail>
+         <part>org.eolang.jeo.opcode</part>
+      </meta>
+      <meta>
+         <head>alias</head>
+         <tail>org.eolang.jeo.label</tail>
+         <part>org.eolang.jeo.label</part>
+      </meta>
+   </metas>
+   <objects>
+      <o abstract="" name="j$Factorialized">
+         <o base="int" data="bytes" name="version">00 00 00 00 00 00 00 34</o>
+         <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 20</o>
+         <o base="string" data="bytes" name="supername">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
+         <o base="tuple" name="interfaces" star=""/>
+         <o base="field" name="j$d">
+            <o base="int" data="bytes" name="access-j$d">00 00 00 00 00 00 00 02</o>
+            <o base="string" data="bytes" name="descriptor-j$d">49</o>
+            <o base="string" data="bytes" name="signature-j$d"/>
+            <o base="int" data="bytes" name="value-j$d" scope="nullable"/>
+         </o>
+         <o abstract="" name="new">
+            <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 00</o>
+            <o base="string" data="bytes" name="descriptor">28 49 29 56</o>
+            <o base="string" data="bytes" name="signature"/>
+            <o base="tuple" name="exceptions" star=""/>
+            <o name="maxs">
+               <o base="int" data="bytes" name="stack">00 00 00 00 00 00 00 02</o>
+               <o base="int" data="bytes" name="locals">00 00 00 00 00 00 00 02</o>
+            </o>
+            <o abstract="" name="arg__I__0"/>
+            <o base="seq" name="@">
+               <o base="tuple" star="">
+                  <o base="labeled">
+                     <o base="label" data="bytes">36 36 38 32 62 37 39 63 2D 61 65 31 36 2D 34 62 64 32 2D 62 37 30 33 2D 64 37 35 30 38 66 64 30 38 34 32 33</o>
+                  </o>
+                  <o base="labeled">
+                     <o base=".super" scope="descriptor=()V|name=&lt;init&gt;|owner=java/lang/Object">
+                        <o base="$" scope="descriptor=org.eolang.benchmark.Factorialized"/>
+                     </o>
+                     <o base="label" data="bytes">35 33 62 62 30 38 61 64 2D 61 62 35 34 2D 34 33 34 65 2D 62 65 32 33 2D 32 64 31 61 30 65 66 36 65 39 62 63</o>
+                  </o>
+                  <o base="labeled">
+                     <o base=".write-field">
+                        <o base=".d"
+                           scope="descriptor=I|name=d|owner=org/eolang/benchmark/Factorialized">
+                           <o base="$" scope="descriptor=org.eolang.benchmark.Factorialized"/>
+                        </o>
+                        <o base="local1" scope="descriptor=I|type=local"/>
+                     </o>
+                     <o base="label" data="bytes">33 38 35 39 33 31 62 35 2D 38 63 64 33 2D 34 38 32 65 2D 38 63 65 66 2D 30 38 30 33 30 64 63 65 61 62 64 31</o>
+                  </o>
+                  <o base="labeled">
+                     <o base="opcode" line="999" name="RETURN">
+                        <o base="int" data="bytes">00 00 00 00 00 00 00 B1</o>
+                     </o>
+                     <o base="label" data="bytes">37 61 64 64 31 32 64 30 2D 65 61 63 30 2D 34 63 61 34 2D 62 35 62 63 2D 63 62 33 39 33 34 63 65 39 36 64 35</o>
+                  </o>
+               </o>
+            </o>
+         </o>
+         <o abstract="" name="j$get">
+            <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 01</o>
+            <o base="string" data="bytes" name="descriptor">28 29 49</o>
+            <o base="string" data="bytes" name="signature"/>
+            <o base="tuple" name="exceptions" star=""/>
+            <o name="maxs">
+               <o base="int" data="bytes" name="stack">00 00 00 00 00 00 00 01</o>
+               <o base="int" data="bytes" name="locals">00 00 00 00 00 00 00 01</o>
+            </o>
+            <o base="seq" name="@">
+               <o base="tuple" star="">
+                  <o base="labeled">
+                     <o base="label" data="bytes">38 66 39 37 30 62 32 30 2D 37 61 65 32 2D 34 39 36 62 2D 38 63 61 62 2D 34 36 65 66 34 35 35 36 62 35 34 31</o>
+                  </o>
+                  <o base=".xget"
+                     scope="descriptor=(I)I|interfaced=false|name=xget|owner=org/eolang/benchmark/Factorialized|type=static">
+                     <o base="org.eolang.benchmark.Factorialized"/>
+                     <o base=".get-field">
+                        <o base=".d"
+                           scope="descriptor=I|name=d|owner=org/eolang/benchmark/Factorialized|type=field">
+                           <o base="$" scope="descriptor=org.eolang.benchmark.Factorialized"/>
+                        </o>
+                     </o>
+                  </o>
+                  <o base="labeled">
+                     <o base="opcode" line="999" name="IRETURN">
+                        <o base="int" data="bytes">00 00 00 00 00 00 00 AC</o>
+                     </o>
+                     <o base="label" data="bytes">38 38 33 37 30 33 65 30 2D 66 36 63 65 2D 34 37 38 38 2D 61 66 31 34 2D 38 62 35 35 38 33 63 65 63 38 62 37</o>
+                  </o>
+               </o>
+            </o>
+         </o>
+         <o abstract="" name="j$xget">
+            <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 09</o>
+            <o base="string" data="bytes" name="descriptor">28 49 29 49</o>
+            <o base="string" data="bytes" name="signature"/>
+            <o base="tuple" name="exceptions" star=""/>
+            <o name="maxs">
+               <o base="int" data="bytes" name="stack">00 00 00 00 00 00 00 02</o>
+               <o base="int" data="bytes" name="locals">00 00 00 00 00 00 00 01</o>
+            </o>
+            <o abstract="" name="arg__I__0"/>
+            <o base="seq" name="@">
+               <o base="tuple" star="">
+                  <o base="labeled">
+                     <o base="label" data="bytes">66 30 31 38 31 32 61 32 2D 37 37 64 32 2D 34 33 65 32 2D 39 30 61 66 2D 61 61 34 64 32 36 35 36 38 30 63 37</o>
+                  </o>
+                  <o base="labeled">
+                     <o base=".if">
+                        <o base=".gt">
+                           <o base="local0" scope="descriptor=I|type=local"/>
+                           <o base="int" data="bytes">00 00 00 00 00 00 00 01</o>
+                        </o>
+                        <o base="label" data="bytes">62 65 64 34 61 66 35 61 2D 31 63 66 62 2D 34 33 64 62 2D 39 61 65 63 2D 31 36 31 38 66 66 66 61 64 32 65 38</o>
+                        <o base="nop"/>
+                     </o>
+                     <o base="label" data="bytes">32 66 33 30 33 30 64 33 2D 66 32 37 38 2D 34 32 35 39 2D 39 63 30 39 2D 65 61 63 35 64 31 63 61 39 39 34 32</o>
+                  </o>
+                  <o base="int" data="bytes">00 00 00 00 00 00 00 01</o>
+                  <o base="labeled">
+                     <o base="opcode" line="999" name="IRETURN">
+                        <o base="int" data="bytes">00 00 00 00 00 00 00 AC</o>
+                     </o>
+                     <o base="label" data="bytes">62 65 64 34 61 66 35 61 2D 31 63 66 62 2D 34 33 64 62 2D 39 61 65 63 2D 31 36 31 38 66 66 66 61 64 32 65 38</o>
+                  </o>
+                  <o base="times">
+                     <o base=".xget"
+                        scope="descriptor=(I)I|interfaced=false|name=xget|owner=org/eolang/benchmark/Factorialized|type=static">
+                        <o base="org.eolang.benchmark.Factorialized"/>
+                        <o base=".minus">
+                           <o base="local0" scope="descriptor=I|type=local"/>
+                           <o base="int" data="bytes">00 00 00 00 00 00 00 01</o>
+                        </o>
+                     </o>
+                     <o base="local0" scope="descriptor=I|type=local"/>
+                  </o>
+                  <o base="labeled">
+                     <o base="opcode" line="999" name="IRETURN">
+                        <o base="int" data="bytes">00 00 00 00 00 00 00 AC</o>
+                     </o>
+                     <o base="label" data="bytes">34 66 30 38 32 35 35 62 2D 64 62 32 64 2D 34 65 31 64 2D 39 32 31 32 2D 33 61 62 65 39 30 31 35 30 61 38 31</o>
+                  </o>
+               </o>
+            </o>
+         </o>
+      </o>
+   </objects>
+</program>
