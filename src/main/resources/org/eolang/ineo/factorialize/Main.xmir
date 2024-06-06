@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program dob="2024-06-06T14:49:07.509924Z"
+         ms="1717685347509"
+         name="j$Main"
+         revision="0.0.0"
+         time="2024-06-06T14:49:07.509924Z"
+         version="0.0.0">
+   <listing>yv66vgAAADQAWQoAAgADBwAEDAAFAAYBABBqYXZhL2xhbmcvT2JqZWN0AQAGPGluaXQ+AQADKClWCgAIAAkHAAoMAAsADAEADmphdmEvbGFuZy9Mb25nAQAJcGFyc2VMb25nAQAVKExqYXZhL2xhbmcvU3RyaW5nOylKCgAOAA8HABAMABEAEgEAEWphdmEvbGFuZy9JbnRlZ2VyAQAIcGFyc2VJbnQBABUoTGphdmEvbGFuZy9TdHJpbmc7KUkKABQAFQcAFgwAFwAYAQAQamF2YS9sYW5nL1N5c3RlbQEAEWN1cnJlbnRUaW1lTWlsbGlzAQADKClKBwAaAQAib3JnL2VvbGFuZy9iZW5jaG1hcmsvRmFjdG9yaWFsaXplZAoAGQAcDAAFAB0BAAQoSSlWCgAZAB8MACAAIQEAA2dldAEAAygpSQgAIwEAD3N1bT0lZCB0aW1lPSVkCgoACAAlDAAmACcBAAd2YWx1ZU9mAQATKEopTGphdmEvbGFuZy9Mb25nOwoAKQAqBwArDAAsAC0BABBqYXZhL2xhbmcvU3RyaW5nAQAGZm9ybWF0AQA5KExqYXZhL2xhbmcvU3RyaW5nO1tMamF2YS9sYW5nL09iamVjdDspTGphdmEvbGFuZy9TdHJpbmc7CQAUAC8MADAAMQEAA291dAEAFUxqYXZhL2lvL1ByaW50U3RyZWFtOwoAMwA0BwA1DAA2ADcBABNqYXZhL2lvL1ByaW50U3RyZWFtAQAHcHJpbnRsbgEAFShMamF2YS9sYW5nL1N0cmluZzspVgcAOQEAGW9yZy9lb2xhbmcvYmVuY2htYXJrL01haW4BAARDb2RlAQAPTGluZU51bWJlclRhYmxlAQASTG9jYWxWYXJpYWJsZVRhYmxlAQAEdGhpcwEAG0xvcmcvZW9sYW5nL2JlbmNobWFyay9NYWluOwEACWZhY3RvcmlhbAEAOChMamF2YS9sYW5nL1N0cmluZztMamF2YS9sYW5nL1N0cmluZzspTGphdmEvbGFuZy9TdHJpbmc7AQABaQEAAUoBAAdwcm91bmRzAQASTGphdmEvbGFuZy9TdHJpbmc7AQAGcHZhbHVlAQAGcm91bmRzAQAFdmFsdWUBAAFJAQADc3VtAQAFc3RhcnQBAAhyZXNwb25zZQEADVN0YWNrTWFwVGFibGUBABBNZXRob2RQYXJhbWV0ZXJzAQAZUnVudGltZVZpc2libGVBbm5vdGF0aW9ucwEANExvcmcvc3ByaW5nZnJhbWV3b3JrL3dlYi9iaW5kL2Fubm90YXRpb24vR2V0TWFwcGluZzsBAAovZmFjdG9yaWFsAQAiUnVudGltZVZpc2libGVQYXJhbWV0ZXJBbm5vdGF0aW9ucwEANkxvcmcvc3ByaW5nZnJhbWV3b3JrL3dlYi9iaW5kL2Fubm90YXRpb24vUmVxdWVzdFBhcmFtOwEADGRlZmF1bHRWYWx1ZQEAATEBAAIxMAEAClNvdXJjZUZpbGUBAAlNYWluLmphdmEBADhMb3JnL3NwcmluZ2ZyYW1ld29yay93ZWIvYmluZC9hbm5vdGF0aW9uL1Jlc3RDb250cm9sbGVyOwAxADgAAgAAAAAAAgABAAUABgABADoAAAAvAAEAAQAAAAUqtwABsQAAAAIAOwAAAAYAAQAAACQAPAAAAAwAAQAAAAUAPQA+AAAAAQA/AEAABAA6AAABKAAIAAwAAABiK7gAB0IsuAANNgUJNwa4ABM3CAk3ChYKIZScAB4WBrsAGVkVBbcAG7YAHoVhNwYWCgphNwqn/+ESIgW9AAJZAxYGuAAkU1kEuAATFghluAAkU7gAKDoKsgAuGQq2ADIZCrAAAAADADsAAAAyAAwAAAArAAUALAALAC0ADgAuABMALwAdADAALwAvADgAMgBCADMAUgAyAFcANQBfADYAPAAAAFwACQAWACIAQQBCAAoAAABiAD0APgAAAAAAYgBDAEQAAQAAAGIARQBEAAIABQBdAEYAQgADAAsAVwBHAEgABQAOAFQASQBCAAYAEwBPAEoAQgAIAFcACwBLAEQACgBMAAAAGgAC/wAWAAgHADgHACkHACkEAQQEBAAA+gAhAE0AAAAJAgBDAAAARQAAAE4AAAAOAAEATwABAEdbAAFzAFAAUQAAACECAAEAUgACAEdzAEYAU3MAVAABAFIAAgBHcwBHAFNzAFUAAgBWAAAAAgBXAE4AAAAGAAEAWAAA</listing>
+   <errors/>
+   <sheets/>
+   <license/>
+   <metas>
+      <meta>
+         <head>package</head>
+         <tail>org.eolang.benchmark</tail>
+         <part>org.eolang.benchmark</part>
+      </meta>
+      <meta>
+         <head>alias</head>
+         <tail>org.eolang.jeo.opcode</tail>
+         <part>org.eolang.jeo.opcode</part>
+      </meta>
+      <meta>
+         <head>alias</head>
+         <tail>org.eolang.jeo.label</tail>
+         <part>org.eolang.jeo.label</part>
+      </meta>
+   </metas>
+   <objects>
+      <o abstract="" name="j$Main">
+         <o base="int" data="bytes" name="version">00 00 00 00 00 00 00 34</o>
+         <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 31</o>
+         <o base="string" data="bytes" name="supername">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
+         <o base="tuple" name="interfaces" star=""/>
+         <o abstract="" name="new">
+            <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 01</o>
+            <o base="string" data="bytes" name="descriptor">28 29 56</o>
+            <o base="string" data="bytes" name="signature"/>
+            <o base="tuple" name="exceptions" star=""/>
+            <o name="maxs">
+               <o base="int" data="bytes" name="stack">00 00 00 00 00 00 00 01</o>
+               <o base="int" data="bytes" name="locals">00 00 00 00 00 00 00 01</o>
+            </o>
+            <o base="seq" name="@">
+               <o base="tuple" star="">
+                  <o base="label" data="bytes">64 63 33 36 31 31 34 31 2D 64 39 34 33 2D 34 32 38 30 2D 62 37 37 31 2D 36 61 36 38 64 64 64 65 32 65 34 31</o>
+                  <o base="opcode" line="999" name="ALOAD-E39A3">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 00</o>
+                  </o>
+                  <o base="opcode" line="999" name="INVOKESPECIAL-E39A5">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B7</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
+                     <o base="string" data="bytes">3C 69 6E 69 74 3E</o>
+                     <o base="string" data="bytes">28 29 56</o>
+                     <o base="bool" data="bytes">00</o>
+                  </o>
+                  <o base="opcode" line="999" name="RETURN-E39A6">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B1</o>
+                  </o>
+                  <o base="label" data="bytes">63 63 33 38 38 37 30 30 2D 33 63 65 37 2D 34 33 36 62 2D 39 39 37 31 2D 64 62 32 33 33 61 32 66 65 32 62 37</o>
+               </o>
+            </o>
+         </o>
+         <o abstract="" name="j$factorial">
+            <o base="int" data="bytes" name="access">00 00 00 00 00 00 00 01</o>
+            <o base="string" data="bytes" name="descriptor">28 4C 6A 61 76 61 2F 6C 61 6E 67 2F 53 74 72 69 6E 67 3B 4C 6A 61 76 61 2F 6C 61 6E 67 2F 53 74 72 69 6E 67 3B 29 4C 6A 61 76 61 2F 6C 61 6E 67 2F 53 74 72 69 6E 67 3B</o>
+            <o base="string" data="bytes" name="signature"/>
+            <o base="tuple" name="exceptions" star=""/>
+            <o name="maxs">
+               <o base="int" data="bytes" name="stack">00 00 00 00 00 00 00 08</o>
+               <o base="int" data="bytes" name="locals">00 00 00 00 00 00 00 0C</o>
+            </o>
+            <o abstract="" name="arg__Ljava/lang/String;__0">
+               <o base="annotation">
+                  <o base="string" data="bytes" name="descriptor">4C 6F 72 67 2F 73 70 72 69 6E 67 66 72 61 6D 65 77 6F 72 6B 2F 77 65 62 2F 62 69 6E 64 2F 61 6E 6E 6F 74 61 74 69 6F 6E 2F 52 65 71 75 65 73 74 50 61 72 61 6D 3B</o>
+                  <o base="bool" data="bytes" name="visible">01</o>
+                  <o base="annotation-property">
+                     <o base="string" data="bytes" name="type">50 4C 41 49 4E</o>
+                     <o base="string" data="bytes" name="name">76 61 6C 75 65</o>
+                     <o base="string" data="bytes" name="value">72 6F 75 6E 64 73</o>
+                  </o>
+                  <o base="annotation-property">
+                     <o base="string" data="bytes" name="type">50 4C 41 49 4E</o>
+                     <o base="string" data="bytes" name="name">64 65 66 61 75 6C 74 56 61 6C 75 65</o>
+                     <o base="string" data="bytes" name="value">31</o>
+                  </o>
+               </o>
+            </o>
+            <o abstract="" name="arg__Ljava/lang/String;__1">
+               <o base="annotation">
+                  <o base="string" data="bytes" name="descriptor">4C 6F 72 67 2F 73 70 72 69 6E 67 66 72 61 6D 65 77 6F 72 6B 2F 77 65 62 2F 62 69 6E 64 2F 61 6E 6E 6F 74 61 74 69 6F 6E 2F 52 65 71 75 65 73 74 50 61 72 61 6D 3B</o>
+                  <o base="bool" data="bytes" name="visible">01</o>
+                  <o base="annotation-property">
+                     <o base="string" data="bytes" name="type">50 4C 41 49 4E</o>
+                     <o base="string" data="bytes" name="name">76 61 6C 75 65</o>
+                     <o base="string" data="bytes" name="value">76 61 6C 75 65</o>
+                  </o>
+                  <o base="annotation-property">
+                     <o base="string" data="bytes" name="type">50 4C 41 49 4E</o>
+                     <o base="string" data="bytes" name="name">64 65 66 61 75 6C 74 56 61 6C 75 65</o>
+                     <o base="string" data="bytes" name="value">31 30</o>
+                  </o>
+               </o>
+            </o>
+            <o base="tuple" name="annotations" star="">
+               <o base="annotation">
+                  <o base="string" data="bytes" name="descriptor">4C 6F 72 67 2F 73 70 72 69 6E 67 66 72 61 6D 65 77 6F 72 6B 2F 77 65 62 2F 62 69 6E 64 2F 61 6E 6E 6F 74 61 74 69 6F 6E 2F 47 65 74 4D 61 70 70 69 6E 67 3B</o>
+                  <o base="bool" data="bytes" name="visible">01</o>
+                  <o base="annotation-property">
+                     <o base="string" data="bytes" name="type">41 52 52 41 59</o>
+                     <o base="string" data="bytes" name="name">76 61 6C 75 65</o>
+                     <o base="annotation-property">
+                        <o base="string" data="bytes" name="type">50 4C 41 49 4E</o>
+                        <o base="string" data="bytes" name="name"/>
+                        <o base="string" data="bytes" name="value">2F 66 61 63 74 6F 72 69 61 6C</o>
+                     </o>
+                  </o>
+               </o>
+            </o>
+            <o base="seq" name="@">
+               <o base="tuple" star="">
+                  <o base="label" data="bytes">66 39 62 39 34 38 63 36 2D 38 65 35 61 2D 34 34 36 64 2D 62 66 36 35 2D 63 39 32 35 32 37 64 64 34 37 35 62</o>
+                  <o base="opcode" line="999" name="ALOAD-E39A9">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 01</o>
+                  </o>
+                  <o base="opcode" line="999" name="INVOKESTATIC-E39AA">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B8</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 4C 6F 6E 67</o>
+                     <o base="string" data="bytes">70 61 72 73 65 4C 6F 6E 67</o>
+                     <o base="string" data="bytes">28 4C 6A 61 76 61 2F 6C 61 6E 67 2F 53 74 72 69 6E 67 3B 29 4A</o>
+                     <o base="bool" data="bytes">00</o>
+                  </o>
+                  <o base="opcode" line="999" name="LSTORE-E39AB">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 37</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 03</o>
+                  </o>
+                  <o base="label" data="bytes">63 66 33 34 30 32 39 36 2D 66 30 36 36 2D 34 30 34 36 2D 61 33 64 31 2D 34 32 32 64 36 36 39 39 39 35 63 36</o>
+                  <o base="opcode" line="999" name="ALOAD-E39AF">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 02</o>
+                  </o>
+                  <o base="opcode" line="999" name="INVOKESTATIC-E39B0">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B8</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 49 6E 74 65 67 65 72</o>
+                     <o base="string" data="bytes">70 61 72 73 65 49 6E 74</o>
+                     <o base="string" data="bytes">28 4C 6A 61 76 61 2F 6C 61 6E 67 2F 53 74 72 69 6E 67 3B 29 49</o>
+                     <o base="bool" data="bytes">00</o>
+                  </o>
+                  <o base="opcode" line="999" name="ISTORE-E39B1">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 36</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 05</o>
+                  </o>
+                  <o base="label" data="bytes">62 35 62 32 30 30 32 36 2D 65 32 30 38 2D 34 61 38 66 2D 38 61 35 34 2D 38 37 39 64 37 39 64 37 30 32 38 33</o>
+                  <o base="opcode" line="999" name="LCONST_0-E39B5">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 09</o>
+                  </o>
+                  <o base="opcode" line="999" name="LSTORE-E39B6">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 37</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 06</o>
+                  </o>
+                  <o base="label" data="bytes">33 38 35 35 35 62 66 30 2D 36 39 66 65 2D 34 35 32 30 2D 62 65 61 38 2D 34 32 61 65 62 62 37 30 31 36 39 61</o>
+                  <o base="opcode" line="999" name="INVOKESTATIC-E39B7">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B8</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 53 79 73 74 65 6D</o>
+                     <o base="string" data="bytes">63 75 72 72 65 6E 74 54 69 6D 65 4D 69 6C 6C 69 73</o>
+                     <o base="string" data="bytes">28 29 4A</o>
+                     <o base="bool" data="bytes">00</o>
+                  </o>
+                  <o base="opcode" line="999" name="LSTORE-E39B8">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 37</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 08</o>
+                  </o>
+                  <o base="label" data="bytes">64 30 32 63 62 65 39 35 2D 61 35 35 34 2D 34 39 38 34 2D 61 63 32 61 2D 65 39 30 62 61 66 66 64 36 37 35 33</o>
+                  <o base="opcode" line="999" name="LCONST_0-E39BE">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 09</o>
+                  </o>
+                  <o base="opcode" line="999" name="LSTORE-E39BF">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 37</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 0A</o>
+                  </o>
+                  <o base="label" data="bytes">39 62 37 65 34 31 36 64 2D 63 33 32 63 2D 34 34 38 34 2D 38 39 38 34 2D 33 34 33 61 34 35 31 63 33 63 31 62</o>
+                  <o base="frame">
+                     <o base="int" data="bytes" name="type">00 00 00 00 00 00 00 00</o>
+                     <o base="int" data="bytes" name="nlocal">00 00 00 00 00 00 00 08</o>
+                     <o base="tuple" name="local" star="">
+                        <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 4D 61 69 6E</o>
+                        <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 53 74 72 69 6E 67</o>
+                        <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 53 74 72 69 6E 67</o>
+                        <o base="int" data="bytes">00 00 00 00 00 00 00 04</o>
+                        <o base="int" data="bytes">00 00 00 00 00 00 00 01</o>
+                        <o base="int" data="bytes">00 00 00 00 00 00 00 04</o>
+                        <o base="int" data="bytes">00 00 00 00 00 00 00 04</o>
+                        <o base="int" data="bytes">00 00 00 00 00 00 00 04</o>
+                     </o>
+                     <o base="int" data="bytes" name="nstack">00 00 00 00 00 00 00 00</o>
+                     <o base="tuple" name="stack" star=""/>
+                  </o>
+                  <o base="opcode" line="999" name="LLOAD-E39C1">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 16</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 0A</o>
+                  </o>
+                  <o base="opcode" line="999" name="LLOAD-E39C2">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 16</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 03</o>
+                  </o>
+                  <o base="opcode" line="999" name="LCMP-E39C3">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 94</o>
+                  </o>
+                  <o base="opcode" line="999" name="IFGE-E39C4">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 9C</o>
+                     <o base="label" data="bytes">38 38 64 36 65 30 38 65 2D 30 34 31 32 2D 34 61 62 62 2D 61 34 32 30 2D 66 63 63 65 30 37 38 66 39 38 39 37</o>
+                  </o>
+                  <o base="label" data="bytes">38 39 61 35 39 34 65 62 2D 31 32 35 35 2D 34 34 32 33 2D 61 66 64 37 2D 32 36 63 33 64 63 38 64 30 35 36 62</o>
+                  <o base="opcode" line="999" name="LLOAD-E39C8">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 16</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 06</o>
+                  </o>
+                  <o base="opcode" line="999" name="NEW-E39CA">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 BB</o>
+                     <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 46 61 63 74 6F 72 69 61 6C 69 7A 65 64</o>
+                  </o>
+                  <o base="opcode" line="999" name="DUP-E39CC">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 59</o>
+                  </o>
+                  <o base="opcode" line="999" name="ILOAD-E39CD">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 15</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 05</o>
+                  </o>
+                  <o base="opcode" line="999" name="INVOKESPECIAL-E39CF">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B7</o>
+                     <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 46 61 63 74 6F 72 69 61 6C 69 7A 65 64</o>
+                     <o base="string" data="bytes">3C 69 6E 69 74 3E</o>
+                     <o base="string" data="bytes">28 49 29 56</o>
+                     <o base="bool" data="bytes">00</o>
+                  </o>
+                  <o base="opcode" line="999" name="INVOKEVIRTUAL-E39D0">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B6</o>
+                     <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 46 61 63 74 6F 72 69 61 6C 69 7A 65 64</o>
+                     <o base="string" data="bytes">67 65 74</o>
+                     <o base="string" data="bytes">28 29 49</o>
+                     <o base="bool" data="bytes">00</o>
+                  </o>
+                  <o base="opcode" line="999" name="I2L-E39D1">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 85</o>
+                  </o>
+                  <o base="opcode" line="999" name="LADD-E39D2">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 61</o>
+                  </o>
+                  <o base="opcode" line="999" name="LSTORE-E39D3">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 37</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 06</o>
+                  </o>
+                  <o base="label" data="bytes">31 66 66 36 66 38 35 66 2D 33 65 30 36 2D 34 61 61 30 2D 61 30 30 32 2D 39 31 64 33 35 61 32 61 66 64 64 30</o>
+                  <o base="opcode" line="999" name="LLOAD-E39D5">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 16</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 0A</o>
+                  </o>
+                  <o base="opcode" line="999" name="LCONST_1-E39D6">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 0A</o>
+                  </o>
+                  <o base="opcode" line="999" name="LADD-E39D7">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 61</o>
+                  </o>
+                  <o base="opcode" line="999" name="LSTORE-E39D8">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 37</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 0A</o>
+                  </o>
+                  <o base="opcode" line="999" name="GOTO-E39D9">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 A7</o>
+                     <o base="label" data="bytes">39 62 37 65 34 31 36 64 2D 63 33 32 63 2D 34 34 38 34 2D 38 39 38 34 2D 33 34 33 61 34 35 31 63 33 63 31 62</o>
+                  </o>
+                  <o base="label" data="bytes">38 38 64 36 65 30 38 65 2D 30 34 31 32 2D 34 61 62 62 2D 61 34 32 30 2D 66 63 63 65 30 37 38 66 39 38 39 37</o>
+                  <o base="frame">
+                     <o base="int" data="bytes" name="type">00 00 00 00 00 00 00 02</o>
+                     <o base="int" data="bytes" name="nlocal">00 00 00 00 00 00 00 01</o>
+                     <o base="tuple" name="local" star="">
+                        <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 4D 61 69 6E</o>
+                        <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 53 74 72 69 6E 67</o>
+                        <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 53 74 72 69 6E 67</o>
+                        <o base="int" data="bytes">00 00 00 00 00 00 00 04</o>
+                        <o base="int" data="bytes">00 00 00 00 00 00 00 01</o>
+                        <o base="int" data="bytes">00 00 00 00 00 00 00 04</o>
+                        <o base="int" data="bytes">00 00 00 00 00 00 00 04</o>
+                        <o base="int" data="bytes">00 00 00 00 00 00 00 04</o>
+                     </o>
+                     <o base="int" data="bytes" name="nstack">00 00 00 00 00 00 00 00</o>
+                     <o base="tuple" name="stack" star=""/>
+                  </o>
+                  <o base="opcode" line="999" name="LDC-E39DA">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 12</o>
+                     <o base="string" data="bytes">73 75 6D 3D 25 64 20 74 69 6D 65 3D 25 64 0A</o>
+                  </o>
+                  <o base="opcode" line="999" name="ICONST_2-E39DB">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 05</o>
+                  </o>
+                  <o base="opcode" line="999" name="ANEWARRAY-E39DC">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 BD</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
+                  </o>
+                  <o base="opcode" line="999" name="DUP-E39DD">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 59</o>
+                  </o>
+                  <o base="opcode" line="999" name="ICONST_0-E39DE">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 03</o>
+                  </o>
+                  <o base="opcode" line="999" name="LLOAD-E39DF">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 16</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 06</o>
+                  </o>
+                  <o base="label" data="bytes">65 64 38 34 39 66 31 61 2D 65 35 34 39 2D 34 66 33 66 2D 39 61 64 61 2D 30 31 64 61 39 31 36 61 37 37 63 39</o>
+                  <o base="opcode" line="999" name="INVOKESTATIC-E39E6">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B8</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 4C 6F 6E 67</o>
+                     <o base="string" data="bytes">76 61 6C 75 65 4F 66</o>
+                     <o base="string" data="bytes">28 4A 29 4C 6A 61 76 61 2F 6C 61 6E 67 2F 4C 6F 6E 67 3B</o>
+                     <o base="bool" data="bytes">00</o>
+                  </o>
+                  <o base="opcode" line="999" name="AASTORE-E39E7">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 53</o>
+                  </o>
+                  <o base="opcode" line="999" name="DUP-E39E8">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 59</o>
+                  </o>
+                  <o base="opcode" line="999" name="ICONST_1-E39E9">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 04</o>
+                  </o>
+                  <o base="opcode" line="999" name="INVOKESTATIC-E39EA">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B8</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 53 79 73 74 65 6D</o>
+                     <o base="string" data="bytes">63 75 72 72 65 6E 74 54 69 6D 65 4D 69 6C 6C 69 73</o>
+                     <o base="string" data="bytes">28 29 4A</o>
+                     <o base="bool" data="bytes">00</o>
+                  </o>
+                  <o base="opcode" line="999" name="LLOAD-E39EB">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 16</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 08</o>
+                  </o>
+                  <o base="opcode" line="999" name="LSUB-E39EC">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 65</o>
+                  </o>
+                  <o base="opcode" line="999" name="INVOKESTATIC-E39ED">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B8</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 4C 6F 6E 67</o>
+                     <o base="string" data="bytes">76 61 6C 75 65 4F 66</o>
+                     <o base="string" data="bytes">28 4A 29 4C 6A 61 76 61 2F 6C 61 6E 67 2F 4C 6F 6E 67 3B</o>
+                     <o base="bool" data="bytes">00</o>
+                  </o>
+                  <o base="opcode" line="999" name="AASTORE-E39EE">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 53</o>
+                  </o>
+                  <o base="label" data="bytes">37 36 61 33 38 36 31 66 2D 35 64 38 36 2D 34 65 62 32 2D 61 65 33 61 2D 33 64 32 30 66 39 38 61 62 36 38 36</o>
+                  <o base="opcode" line="999" name="INVOKESTATIC-E39F0">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B8</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 53 74 72 69 6E 67</o>
+                     <o base="string" data="bytes">66 6F 72 6D 61 74</o>
+                     <o base="string" data="bytes">28 4C 6A 61 76 61 2F 6C 61 6E 67 2F 53 74 72 69 6E 67 3B 5B 4C 6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74 3B 29 4C 6A 61 76 61 2F 6C 61 6E 67 2F 53 74 72 69 6E 67 3B</o>
+                     <o base="bool" data="bytes">00</o>
+                  </o>
+                  <o base="opcode" line="999" name="ASTORE-E39F1">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 3A</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 0A</o>
+                  </o>
+                  <o base="label" data="bytes">62 37 65 37 35 36 36 64 2D 63 64 65 63 2D 34 31 33 64 2D 61 30 36 61 2D 66 37 37 30 31 33 63 62 36 31 36 64</o>
+                  <o base="opcode" line="999" name="GETSTATIC-E39F2">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B2</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 53 79 73 74 65 6D</o>
+                     <o base="string" data="bytes">6F 75 74</o>
+                     <o base="string" data="bytes">4C 6A 61 76 61 2F 69 6F 2F 50 72 69 6E 74 53 74 72 65 61 6D 3B</o>
+                  </o>
+                  <o base="opcode" line="999" name="ALOAD-E39F3">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 0A</o>
+                  </o>
+                  <o base="opcode" line="999" name="INVOKEVIRTUAL-E39F4">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B6</o>
+                     <o base="string" data="bytes">6A 61 76 61 2F 69 6F 2F 50 72 69 6E 74 53 74 72 65 61 6D</o>
+                     <o base="string" data="bytes">70 72 69 6E 74 6C 6E</o>
+                     <o base="string" data="bytes">28 4C 6A 61 76 61 2F 6C 61 6E 67 2F 53 74 72 69 6E 67 3B 29 56</o>
+                     <o base="bool" data="bytes">00</o>
+                  </o>
+                  <o base="label" data="bytes">65 64 34 66 30 33 37 65 2D 33 31 34 64 2D 34 36 38 63 2D 62 36 36 63 2D 33 39 33 64 62 66 64 33 30 30 64 32</o>
+                  <o base="opcode" line="999" name="ALOAD-E39FD">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 19</o>
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 0A</o>
+                  </o>
+                  <o base="opcode" line="999" name="ARETURN-E39FE">
+                     <o base="int" data="bytes">00 00 00 00 00 00 00 B0</o>
+                  </o>
+                  <o base="label" data="bytes">62 61 30 63 36 35 36 65 2D 36 66 30 65 2D 34 62 63 31 2D 39 34 36 62 2D 33 36 38 66 31 36 63 32 32 31 64 34</o>
+               </o>
+            </o>
+         </o>
+         <o base="tuple" name="annotations" star="">
+            <o base="annotation">
+               <o base="string" data="bytes" name="descriptor">4C 6F 72 67 2F 73 70 72 69 6E 67 66 72 61 6D 65 77 6F 72 6B 2F 77 65 62 2F 62 69 6E 64 2F 61 6E 6E 6F 74 61 74 69 6F 6E 2F 52 65 73 74 43 6F 6E 74 72 6F 6C 6C 65 72 3B</o>
+               <o base="bool" data="bytes" name="visible">01</o>
+            </o>
+         </o>
+      </o>
+   </objects>
+</program>
