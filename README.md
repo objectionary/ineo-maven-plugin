@@ -82,6 +82,12 @@ Meantime `StaticizedA` will use static method instead of instance one.
 
 Objects `A` and `B` must be from the same package and have the same prefix.
 
+### FACTORIALIZE
+
+The optimization scans the directory and
+1. replaces `org/eolang/benchmark/Main.xmir` with [this Main.xmir](https://github.com/objectionary/ineo-maven-plugin/blob/master/src/main/resources/org/eolang/ineo/factorialize/Main.xmir)
+2. puts [`Factorialized.xmir`](https://github.com/objectionary/ineo-maven-plugin/blob/master/src/main/resources/org/eolang/ineo/factorialize/Factorialized.xmir) near `Main.xmir`
+
 [Here](https://github.com/objectionary/benchmark) you may find a working example that uses the 
 plugin with other optimization tools, like [JEO](https://github.com/objectionary/jeo-maven-plugin) 
 and [OPEO](https://github.com/objectionary/opeo-maven-plugin)
@@ -113,6 +119,19 @@ configuration to your `pom.xml` file:
           <goals>
             <goal>fuse</goal>
           </goals>
+        </execution>
+        <execution>
+          <id>factorialize</id>
+          <phase>generate-sources</phase>
+          <goals>
+            <goal>factorialize</goal>
+          </goals>
+          <configuration>
+            <sourcesDir>SOURCES DIRECTORY</sourcesDir>
+            <outputDir>OUTPUT DIRECTORY</outputDir>
+            <main>PATH TO Main.xmir</main>
+            <factorial>PATH TO Factorial.xmir</factorial>
+          </configuration>
         </execution>
       </executions>
     </plugin>
