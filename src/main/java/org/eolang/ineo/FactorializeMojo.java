@@ -138,6 +138,7 @@ public final class FactorializeMojo extends AbstractMojo {
                     this.sourcesDir.toPath().relativize(file)
                 );
                 try {
+                    new Saved(new XMLDocumentOf(file), path).value();
                     new Saved(
                         FactorializeMojo.FACTORIALIZED,
                         Paths.get(
