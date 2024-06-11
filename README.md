@@ -18,7 +18,7 @@ lighter EO code.
 
 # How to use
 
-To run the plugin you need at least Maven 3.1.+ and Java 11+.
+To run the plugin you need at least Maven 3.1.+ and Java 8+.
 The plugin provides two optimizations:
 
 ### FUSE 
@@ -154,4 +154,4 @@ before sending us your pull request please run full Maven build:
 $ mvn clean install -Pqulice
 ```
 
-You will need [Maven 3.3+](https://maven.apache.org) and Java 11+ installed.
+You will need [Maven 3.3+](https://maven.apache.org) and Java 8+ installed.
