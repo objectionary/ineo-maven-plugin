@@ -55,6 +55,7 @@
                      <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
                      <o base="string" data="bytes">3C 69 6E 69 74 3E</o>
                      <o base="string" data="bytes">28 29 56</o>
+                     <o base="bool" data="bytes">00</o>
                   </o>
                   <o base="label" data="bytes">61 39 32 32 66 34 63 64 2D 31 36 34 61 2D 34 61 37 32 2D 38 66 36 66 2D 64 32 64 31 37 36 37 37 39 35 33 31</o>
                   <o base="opcode" line="999" name="ALOAD-3">
@@ -102,6 +103,7 @@
                      <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 53 74 61 74 69 63 69 7A 65 64 41</o>
                      <o base="string" data="bytes">78 67 65 74</o>
                      <o base="string" data="bytes">28 49 29 49</o>
+                     <o base="bool" data="bytes">00</o>
                   </o>
                   <o base="opcode" line="999" name="IRETURN-A">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 AC</o>
@@ -151,6 +153,7 @@
                      <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 53 74 61 74 69 63 69 7A 65 64 41</o>
                      <o base="string" data="bytes">78 67 65 74</o>
                      <o base="string" data="bytes">28 49 29 49</o>
+                     <o base="bool" data="bytes">00</o>
                   </o>
                   <o base="opcode" line="999" name="IRETURN-13">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 AC</o>

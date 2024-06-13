@@ -55,6 +55,7 @@
                      <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
                      <o base="string" data="bytes">3C 69 6E 69 74 3E</o>
                      <o base="string" data="bytes">28 29 56</o>
+                     <o base="bool" data="bytes">00</o>
                   </o>
                   <o base="label" data="bytes">61 30 34 65 32 61 37 64 2D 35 38 65 33 2D 34 61 63 30 2D 38 63 32 37 2D 34 38 33 38 39 64 38 62 62 34 34 32</o>
                   <o base="opcode" line="999" name="ALOAD-F">
@@ -106,6 +107,7 @@
                      <o base="string" data="bytes">6A 61 76 61 2F 6C 61 6E 67 2F 4F 62 6A 65 63 74</o>
                      <o base="string" data="bytes">68 61 73 68 43 6F 64 65</o>
                      <o base="string" data="bytes">28 29 49</o>
+                     <o base="bool" data="bytes">00</o>
                   </o>
                   <o base="opcode" line="999" name="IADD-17">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 60</o>
@@ -134,6 +136,7 @@
                      <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 42 41</o>
                      <o base="string" data="bytes">66 6F 6F</o>
                      <o base="string" data="bytes">28 29 49</o>
+                     <o base="bool" data="bytes">00</o>
                   </o>
                   <o base="opcode" line="999" name="ICONST_2-1B">
                      <o base="int" data="bytes">00 00 00 00 00 00 00 05</o>
