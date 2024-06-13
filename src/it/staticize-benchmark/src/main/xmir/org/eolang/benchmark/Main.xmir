@@ -128,11 +128,21 @@
                      <o base="string" data="bytes">64 35 65 39 30 31 37 33 2D 62 66 33 64 2D 34 64 66 38 2D 62 32 65 63 2D 31 34 39 65 63 32 30 61 65 37 37 62</o>
                   </o>
                   <o base="local3" scope="descriptor=J|type=LOAD"/>
-                  <o base=".get"
-                     scope="name=get|descriptor=()I|owner=org/eolang/benchmark/A|type=method">
-                     <o base=".new" scope="descriptor=(I)V">
-                        <o base="org/eolang/benchmark/A"/>
-                        <o base="int" data="bytes">00 00 00 00 00 00 00 2A</o>
+                  <o base=".get" scope="descriptor=()I|interfaced=false|name=get|owner=org/eolang/benchmark/A|type=method">
+                     <o base=".new" scope="descriptor=(I)V|interfaced=false">
+                        <o base="duplicated">
+                           <o base=".new-type">
+                              <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 41</o>
+                           </o>
+                        </o>
+                        <o base=".minus">
+                           <o base=".get-field">
+                              <o base=".d" scope="descriptor=I|name=d|owner=org/eolang/benchmark/A|type=field">
+                                 <o base="$" scope="descriptor=org.eolang.benchmark.A"/>
+                              </o>
+                           </o>
+                           <o base="int" data="bytes">00 00 00 00 00 00 00 01</o>
+                        </o>
                      </o>
                   </o>
                   <o base="opcode" line="999" name="I2L">
