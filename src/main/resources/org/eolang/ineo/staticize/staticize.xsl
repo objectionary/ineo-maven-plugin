@@ -24,21 +24,23 @@ SOFTWARE.
 -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" id="staticize" version="2.0">
   <xsl:output encoding="UTF-8" method="xml"/>
-  <!--
-  <o base=".get" scope="name=get|descriptor=()I|owner=org/eolang/benchmark/A|type=method">
-     <o base=".new" scope="descriptor=(I)V">
-        <o base="org/eolang/benchmark/A"/>
-        <o base="int" data="bytes">00 00 00 00 00 00 00 2A</o>
-     </o>
-  </o>
-  -->
-  <xsl:template match="//o[@base='.get' and @scope and o[1][@base='.new' and o[1][@base='org/eolang/benchmark/A']]]">
-    <o base=".get" scope="name=get|descriptor=()I|owner=org/eolang/benchmark/StaticizedA|type=method">
-      <o base=".new" scope="descriptor=(I)V">
-        <o base="org/eolang/benchmark/StaticizedA"/>
-        <xsl:copy-of select="./o[position()=1]/o[position()&gt;1]"/>
+  <xsl:template match="//o[@base='.get' and @scope='descriptor=()I|interfaced=false|name=get|owner=org/eolang/benchmark/A|type=method']">
+    <o base=".get" scope="descriptor=()I|interfaced=false|name=get|owner=org/eolang/benchmark/StaticizedA|type=method">
+      <o base=".new" scope="descriptor=(I)V|interfaced=false">
+        <o base="duplicated">
+          <o base=".new-type">
+            <o base="string" data="bytes">6F 72 67 2F 65 6F 6C 61 6E 67 2F 62 65 6E 63 68 6D 61 72 6B 2F 53 74 61 74 69 63 69 7A 65 64 41</o>
+          </o>
+        </o>
+        <o base=".minus">
+          <o base=".get-field">
+            <o base=".d" scope="descriptor=I|name=d|owner=org/eolang/benchmark/StaticizedA|type=field">
+              <o base="$" scope="descriptor=org.eolang.benchmark.StaticizedA"/>
+            </o>
+          </o>
+          <o base="int" data="bytes">00 00 00 00 00 00 00 01</o>
+        </o>
       </o>
-      <xsl:copy-of select="./o[position()&gt;1]"/>
     </o>
   </xsl:template>
   <!-- Ignore other elements -->
